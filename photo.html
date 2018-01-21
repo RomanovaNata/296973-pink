@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo"><img class="page-header__logo-image" src="#" width="1" height="1" alt="Логотип приложения pink"></a>
+      <a class="page-logo"><img class="page-logo__image" src="#" width="1" height="1" alt="Логотип приложения pink"></a>
       <nav class="main-nav">
         <button class="main-nav-toggle" type="button">Открыть меню</button>
           <div class="main-nav__wrapper">
@@ -17,110 +17,114 @@
             <li class="menu-list__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
           </ul>
         </div>
-        <h1 class="main-nav__caption">Фотографии пользователей</h1>
       </nav>
     </header>
     <main class="page-main">
-      <p class="page-title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-      <ul class="photo">
-        <li class="photo__wrapper">
-          <article class="photo__item">
-            <h2 class="photo__header visually-hidden">Фотография моста</h2>
-            <img  class="photo__picture" src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
-            <div class="photo__text">
-              <div class="photo__autor">Анна</div>
-              <div class="photo__datе">(5 минут назад)</div>
-              <p class="photo__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <div class="photo__like">Нравится: 215</div>
-            </div>
-          </article>
-        </li>
-        <li class="photo__wrapper">
-          <article class="photo__item">
-            <h2 class="photo__header visually-hidden">Фотография машины</h2>
-            <img  class="photo__picture" src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
-            <div class="photo__text">
-              <div class="photo__autor">Левон</div>
-              <div class="photo__datе">(5 часов назад)</div>
-              <p class="photo__description">Вчера он на Луну летал, сегодня в руки к нам попал.</p>
-              <div class="photo__like">Нравится: 356</div>
-            </div>
-          </article>
-        </li>
-        <li class="photo__wrapper">
-          <article class="photo__item">
-            <h2 class="photo__header visually-hidden">Фотография барабанов</h2>
-            <img  class="photo__picture" src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
-            <div class="photo__text">
-              <div class="photo__autor">Антон</div>
-              <div class="photo__datе">(12 часов назад)</div>
-              <p class="photo__description">Соседи будут рады!</p>
-              <div class="photo__like">Нравится: 666</div>
-            </div>
-          </article>
-        </li>
-        <li class="photo__wrapper">
-          <article class="photo__item">
-            <h2 class="photo__header visually-hidden">Фотография клетки</h2>
-            <img  class="photo__picture" src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
-            <div class="photo__text">
-              <div class="photo__autor">Борис</div>
-              <div class="photo__datе">(20 часво назад)</div>
-              <p class="photo__description">Здесь могла быть ваша цитата о высоком и вечном!</p>
-              <div class="photo__like">Нравится: 215</div>
-            </div>
-          </article>
-        </li>
-        <li class="photo__wrapper">
-          <article class="photo__item">
-            <h2 class="photo__header visually-hidden">Фотография Кубанской бахчи</h2>
-            <img  class="photo__picture" src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
-            <div class="photo__text">
-              <div class="photo__autor">Сергей</div>
-              <div class="photo__datе">(25 часов назад)</div>
-              <p class="photo__description">Самая кубанская в мире!</p>
-              <div class="photo__like">Нравится: 4</div>
-            </div>
-          </article>
-        </li>
-        <li class="photo__wrapper">
-          <article class="photo__item">
-            <h2 class="photo__header visually-hidden">Фотография ног</h2>
-            <img  class="photo__picture" src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
-            <div class="photo__text">
-              <div class="photo__autor">Максим</div>
-              <div class="photo__datе">(40 часво назад)</div>
-              <p class="photo__description">Где снег-то?</p>
-              <div class="photo__like">Нравится: 150</div>
-            </div>
-          </article>
-        </li>
-        <li class="photo__wrapper">
-          <article class="photo__item">
-            <h2 class="photo__header visually-hidden">Фотография крыла самолета</h2>
-            <img  class="photo__picture" src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
-            <div class="photo__text">
-              <div class="photo__autor">Надежда</div>
-              <div class="photo__datе">(45 часов назад)</div>
-              <p class="photo__description">Всем GM и взаимные лайки!</p>
-              <div class="photo__like">Нравится: 2560</div>
-            </div>
-          </article>
-        </li>
-      </ul>
+      <h1 class="main-nav__caption">Фотографии пользователей</h1>
+      <div class="photo">
+        <p class="page-title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <ul class="photo__list">
+          <li class="photo__item">
+            <article class="photo__wrapper">
+              <h2 class="photo__header visually-hidden">Фотография моста</h2>
+              <div class="photo__picture--hit">
+                <img  class="photo__picture" src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
+              </div>
+              <div class="photo__text">
+                <div class="photo__autor">Анна</div>
+                <div class="photo__datе">(5 минут назад)</div>
+                <p class="photo__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                <div class="photo__like">Нравится: 215</div>
+              </div>
+            </article>
+          </li>
+          <li class="photo__item">
+            <article class="photo__wrapper">
+              <h2 class="photo__header visually-hidden">Фотография машины</h2>
+              <img  class="photo__picture" src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
+              <div class="photo__text">
+                <div class="photo__autor">Левон</div>
+                <div class="photo__datе">(5 часов назад)</div>
+                <p class="photo__description">Вчера он на Луну летал, сегодня в руки к нам попал.</p>
+                <div class="photo__like">Нравится: 356</div>
+              </div>
+            </article>
+          </li>
+          <li class="photo__item">
+            <article class="photo__wrapper">
+              <h2 class="photo__header visually-hidden">Фотография барабанов</h2>
+              <img  class="photo__picture" src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
+              <div class="photo__text">
+                <div class="photo__autor">Антон</div>
+                <div class="photo__datе">(12 часов назад)</div>
+                <p class="photo__description">Соседи будут рады!</p>
+                <div class="photo__like">Нравится: 666</div>
+              </div>
+            </article>
+          </li>
+          <li class="photo__item">
+            <article class="photo__wrapper">
+              <h2 class="photo__header visually-hidden">Фотография клетки</h2>
+              <img  class="photo__picture" src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
+              <div class="photo__text">
+                <div class="photo__autor">Борис</div>
+                <div class="photo__datе">(20 часво назад)</div>
+                <p class="photo__description">Здесь могла быть ваша цитата о высоком и вечном!</p>
+                <div class="photo__like">Нравится: 215</div>
+              </div>
+            </article>
+          </li>
+          <li class="photo__item">
+            <article class="photo__wrapper">
+              <h2 class="photo__header visually-hidden">Фотография Кубанской бахчи</h2>
+              <img  class="photo__picture" src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
+              <div class="photo__text">
+                <div class="photo__autor">Сергей</div>
+                <div class="photo__datе">(25 часов назад)</div>
+                <p class="photo__description">Самая кубанская в мире!</p>
+                <div class="photo__like">Нравится: 4</div>
+              </div>
+            </article>
+          </li>
+          <li class="photo__item">
+            <article class="photo__wrapper">
+              <h2 class="photo__header visually-hidden">Фотография ног</h2>
+              <img  class="photo__picture" src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
+              <div class="photo__text">
+                <div class="photo__autor">Максим</div>
+                <div class="photo__datе">(40 часво назад)</div>
+                <p class="photo__description">Где снег-то?</p>
+                <div class="photo__like">Нравится: 150</div>
+              </div>
+            </article>
+          </li>
+          <li class="photo__item">
+            <article class="photo__wrapper">
+              <h2 class="photo__header visually-hidden">Фотография крыла самолета</h2>
+              <img  class="photo__picture" src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
+              <div class="photo__text">
+                <div class="photo__autor">Надежда</div>
+                <div class="photo__datе">(45 часов назад)</div>
+                <p class="photo__description">Всем GM и взаимные лайки!</p>
+                <div class="photo__like">Нравится: 2560</div>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
       <section class="photo-download">
         <h2 class="photo-download__header visually-hidden">Закачать фотографию</h2>
         <p class="photo-download__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <img src="#" width="1" height="1" alt="Фотография обработанная в приложении pink">
-        <img src="#" width="1" height="1" alt="Обрезать">
-        <img src="#" width="1" height="1" alt="Заливка">
-        <img src="#" width="1" height="1" alt="Контраст">
         <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+          <button class="photo-download__crop" type="button"><img src="#" width="1" height="1" alt="Обрезать"></button>
+          <button class="photo-download__fill" type="button"><img src="#" width="1" height="1" alt="Заливка"></button>
+          <button class="photo-download__contrast" type="button"><img src="#" width="1" height="1" alt="Контраст"></button>
           <input class="photo-download__file" type="file" name="file-download">
           <input class="photo-download__range" type="range" name="range">
+          <button class="photo-download__btn" type="submit">Запостить</button>
+          <button class="photo-download__btn" type="reset">Отмена</button>
         </form>
-        <button class="photo-download__btn" type="submit">Запостить</button>
-        <button class="photo-download__btn" type="reset">Отмена</button>
       </section>
     </main>
     <footer class="page-footer">
