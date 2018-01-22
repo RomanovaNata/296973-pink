@@ -25,16 +25,16 @@
         <form class="competition__form" action="https://echo.htmlacademy.ru" method="post">
           <p class="competition__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
           <fieldset class="competition__fieldset">
-            <legend class="competition__header--hidden visually-hidden">Фамилия, имя и отчество участующего в конкурсе.</legend>
-            <label>
+            <legend class="competition__header competition__header--hidden visually-hidden">Фамилия, имя и отчество участующего в конкурсе.</legend>
+            <label class="competition__wrap">
               <span class="competition__caption">Фамилия:</span>
               <input class="competition__input" type="text" name="surname" placeholder="Укажите вашу фамилию*" required>
             </label>
-            <label>
+            <label class="competition__wrap">
               <span class="competition__caption">Имя:</span>
               <input class="competition__input" type="text" name="name" placeholder="Укажите ваше имя*" required>
             </label>
-            <label>
+            <label class="competition__wrap">
               <span class="competition__caption">Отчество:</span>
               <input class="competition__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
             </label>
@@ -42,54 +42,54 @@
           <fieldset class="competition__fieldset">
             <legend class="competition__header">Ваши безбашенные достижения в путешествии</legend>
             <div class="competition__wrapper">
-              <label>
+              <label class="competition__wrap">
                 <input class="competition__checkbox" type="checkbox" name="progress" value="Селфи с акулой?" checked>
                 <span class="competition__text">Сделал селфи с акулой</span>
               </label>
-              <label>
+              <label class="competition__wrap">
                 <input class="competition__checkbox" type="checkbox" name="progress" value="Обгорел на пляже?" checked>
                 <span class="competition__text">Обгорел на пляже</span>
               </label>
-              <label>
+              <label class="competition__wrap">
                 <input class="competition__checkbox" type="checkbox" name="progress" value="Видел Чака Норриса?">
                 <span class="competition__text">Видел Чака Норриса</span>
               </label>
-              <label>
+              <label class="competition__wrap">
                 <input class="competition__checkbox" type="checkbox" name="progress" value="Накупил сувениров?">
                 <span class="competition__text">Накупил сувениров</span>
               </label>
-              <label>
+              <label class="competition__wrap">
                 <input class="competition__checkbox" type="checkbox" name="progress" value="Удержал башню?" checked>
                 <span class="competition__text">Удержал башню</span>
               </label>
-              <label>
+              <label class="competition__wrap">
                 <input class="competition__checkbox" type="checkbox" name="progress" value="Разгромил отель?">
                 <span class="competition__text">Разгромил отель</span>
               </label>
             </div>
           </fieldset>
           <fieldset class="competition__fieldset">
-            <legend class="competition__header--hidden visually-hidden">Номер телефона и адрес почты участвующего в конкурсе.</legend>
-            <label>
+            <legend class="competition__header competition__header--hidden visually-hidden">Номер телефона и адрес почты участвующего в конкурсе.</legend>
+            <label class="competition__wrap">
               <span class="competition__caption">Номер телефона</span>
               <input class="competition__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
             </label>
-            <label>
+            <label class="competition__wrap">
               <span class="competition__caption">Адрес почты</span>
               <input class="competition__input" type="email" name="email" placeholder="Введите почту*" required>
             </label>
           </fieldset>
           <fieldset class="competition__fieldset">
             <legend class="competition__header">С каким приложением путешествовали?</legend>
-            <label>
+            <label class="competition__wrap">
               <input class="competition__radio" type="radio" name="application" value="IOS" checked>
               <span class="competition__text">Pink для на IOS</span>
             </label>
-            <label>
+            <label class="competition__wrap">
               <input class="competition__radio" type="radio" name="application" value="Android">
               <span class="competition__text">Pink на Android</span>
             </label>
-            <label>
+            <label class="competition__wrap">
               <input class="competition__radio" type="radio" name="application" value="Windows">
               <span class="competition__text">Windows Phone</span>
             </label>
