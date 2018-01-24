@@ -6,15 +6,15 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html"><img class="page-header__logo-image" src="#" width="1" height="1" alt="Логотип приложения pink"></a>
+      <a class="page-header__link" href="index.html"><img class="page-header__logo page-header__logo--image" src="#" width="1" height="1" alt="Логотип приложения pink"></a>
       <nav class="main-nav">
-        <button class="main-nav-toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav-list menu-list">
-            <li class="menu-list__item"><a href="index.html">Главная</a></li>
-            <li class="menu-list__item"><a href="photo.html">Фотографии</a></li>
-            <li class="menu-list__item menu-list__item--active"><a >Конкурс</a></li>
-            <li class="menu-list__item"><a href="https://htmlacademy.ru/">Html academy</a></li>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">Html academy</a></li>
           </ul>
         </div>
       </nav>
@@ -26,43 +26,43 @@
           <p class="competition__slogan">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
           <fieldset class="competition__fieldset">
             <legend class="competition__header competition__header--hidden visually-hidden">Фамилия, имя и отчество участующего в конкурсе.</legend>
-            <label class="competition__wrap">
+            <label class="competition__wrapper">
               <span class="competition__caption">Фамилия:</span>
               <input class="competition__input" type="text" name="surname" placeholder="Укажите вашу фамилию*" required>
             </label>
-            <label class="competition__wrap">
+            <label class="competition__wrapper">
               <span class="competition__caption">Имя:</span>
               <input class="competition__input" type="text" name="name" placeholder="Укажите ваше имя*" required>
             </label>
-            <label class="competition__wrap">
+            <label class="competition__wrapper">
               <span class="competition__caption">Отчество:</span>
               <input class="competition__input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
             </label>
           </fieldset>
           <fieldset class="competition__fieldset">
             <legend class="competition__header">Ваши безбашенные достижения в путешествии</legend>
-            <div class="competition__wrapper">
-              <label class="competition__wrap">
+            <div class="competition__list">
+              <label class="competition__wrapper">
                 <input class="competition__checkbox" type="checkbox" name="progress" value="Селфи с акулой?" checked>
                 <span class="competition__text">Сделал селфи с акулой</span>
               </label>
-              <label class="competition__wrap">
+              <label class="competition__wrapper">
                 <input class="competition__checkbox" type="checkbox" name="progress" value="Обгорел на пляже?" checked>
                 <span class="competition__text">Обгорел на пляже</span>
               </label>
-              <label class="competition__wrap">
+              <label class="competition__wrapper">
                 <input class="competition__checkbox" type="checkbox" name="progress" value="Видел Чака Норриса?">
                 <span class="competition__text">Видел Чака Норриса</span>
               </label>
-              <label class="competition__wrap">
+              <label class="competition__wrapper">
                 <input class="competition__checkbox" type="checkbox" name="progress" value="Накупил сувениров?">
                 <span class="competition__text">Накупил сувениров</span>
               </label>
-              <label class="competition__wrap">
+              <label class="competition__wrapper">
                 <input class="competition__checkbox" type="checkbox" name="progress" value="Удержал башню?" checked>
                 <span class="competition__text">Удержал башню</span>
               </label>
-              <label class="competition__wrap">
+              <label class="competition__wrapper">
                 <input class="competition__checkbox" type="checkbox" name="progress" value="Разгромил отель?">
                 <span class="competition__text">Разгромил отель</span>
               </label>
@@ -70,18 +70,18 @@
           </fieldset>
           <fieldset class="competition__fieldset">
             <legend class="competition__header competition__header--hidden visually-hidden">Номер телефона и адрес почты участвующего в конкурсе.</legend>
-            <label class="competition__wrap">
+            <label class="competition__wrapper">
               <span class="competition__caption">Номер телефона</span>
               <input class="competition__input" type="tel" name="tel" placeholder="Номер, пожалуйста">
             </label>
-            <label class="competition__wrap">
+            <label class="competition__wrapper">
               <span class="competition__caption">Адрес почты</span>
               <input class="competition__input" type="email" name="email" placeholder="Введите почту*" required>
             </label>
           </fieldset>
           <fieldset class="competition__fieldset">
             <legend class="competition__header">С каким приложением путешествовали?</legend>
-            <label class="competition__wrap">
+            <label class="competition__wrapper">
               <input class="competition__radio" type="radio" name="application" value="IOS" checked>
               <span class="competition__text">Pink для на IOS</span>
             </label>
@@ -89,23 +89,23 @@
               <input class="competition__radio" type="radio" name="application" value="Android">
               <span class="competition__text">Pink на Android</span>
             </label>
-            <label class="competition__wrap">
+            <label class="competition__wrapper">
               <input class="competition__radio" type="radio" name="application" value="Windows">
               <span class="competition__text">Windows Phone</span>
             </label>
           </fieldset>
           <fieldset class="competition__fieldset">
               <legend class="competition__header">Опишите свои эмоции</legend>
-              <textarea class="competition__text" rows="20" cols="20">Можно прямо в красках, не стесняясь в выражениях</textarea>
+              <textarea class="competition__textarea" rows="20" cols="20">Можно прямо в красках, не стесняясь в выражениях</textarea>
           </fieldset>
-          <button class="submit-btn" type="submit">Отправить форму</button>
-          <p class="user-obligatorily"><span class="user-obligatorily__color">*</span> - Обязательные поля</p>
+          <button class="competition__submit" type="submit">Отправить форму</button>
+          <p class="competition__obligatorily"><span class="competition__obligatorily competition__obligatorily--color">*</span> - Обязательные поля</p>
         </form>
       </div>
     </main>
     <footer class="page-footer">
       <img class="page-footer__logo" src="#" width="1" height="1" alt="Логотип приложения Pink">
-      <ul class="page-footer__social social__btn">
+      <ul class="social">
         <li class="social__btn social__btn--tw"><a href="#">Twitter</a></li>
         <li class="social__btn social__btn--fb"><a href="#">Facebook</a></li>
         <li class="social__btn social__btn--yt"><a href="#">Youtube</a></li>
@@ -116,16 +116,16 @@
           <img class="copyright__picture" src="#" width="1" height="1" alt="разработано htmlacademy">
         </a>
       </div>
-      <section class="popup">
-        <h2 class="popup__caption">Ваша заявка отправлена</h2>
-        <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим её и оповестим вас.</p>
-        <button class="popup__btn" type="button">Закрыть окно</button>
-      </section>
-      <section class="popup">
-        <h2 class="popup__caption">Что-то пошло не так!</h2>
-        <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="popup__btn" type="button">Закрыть окно</button>
-      </section>
     </footer>
+    <section class="popup">
+      <h2 class="popup__caption">Ваша заявка отправлена</h2>
+      <p class="popup__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим её и оповестим вас.</p>
+      <button class="popup__btn" type="button">Закрыть окно</button>
+    </section>
+    <section class="popup">
+      <h2 class="popup__caption">Что-то пошло не так!</h2>
+      <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="popup__btn" type="button">Закрыть окно</button>
+    </section>
   </body>
 </html>

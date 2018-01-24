@@ -6,15 +6,15 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-logo"><img class="page-logo__image" src="#" width="1" height="1" alt="Логотип приложения pink"></a>
+      <a class="page-header__link"><img class="page-header__logo page-header__logo--image" src="#" width="1" height="1" alt="Логотип приложения pink"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav-list">
-            <li class="main-nav-list__item main-nav-list__item--active"><a class="main-nav-list__link">Главная</a></li>
-            <li class="main-nav-list__item"><a class="main-nav-list__link" href="photo.html">Фотографии</a></li>
-            <li class="main-nav-list__item"><a class="main-nav-list__link" href="form.html">Конкурс</a></li>
-            <li class="main-nav-list__item"><a class="main-nav-list__link" href="https://htmlacademy.ru/">Html academy</a></li>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">Html academy</a></li>
           </ul>
         </div>
       </nav>
@@ -25,9 +25,9 @@
         <h2 class="application__header visually-hidden">Виды приложения Pink</h2>
         <a class="application__reference" href="https://www.apple.com/ru/itunes">Скачать приложение</a>
         <ul class="application__list">
-          <li class="application__item"><a class="application__link application__link--img" href="https://www.apple.com/ru/itunes">Apple</a></li>
-          <li class="application__item"><a class="application__link application__link--img" href="https://play.google.com/store">Android</a></li>
-          <li class="application__item"><a class="application__link application__link--img" href="https://www.microsoft.com/ru-ru/store/b/home">Windows</a></li>
+          <li class="application__item"><a class="application__link application__link--apple" href="https://www.apple.com/ru/itunes">Apple</a></li>
+          <li class="application__item"><a class="application__link application__link--android" href="https://play.google.com/store">Android</a></li>
+          <li class="application__item"><a class="application__link application__link--windows" href="https://www.microsoft.com/ru-ru/store/b/home">Windows</a></li>
         </ul>
         <p class="application__description">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
@@ -37,7 +37,7 @@
           <p class="advantages__text">Устали от серости мегаполиса?</p>
           <p class="advantages__text">Нам есть, что вам предложить!</p>
         </div>
-        <div class="advantages__list-wrapper">
+        <div class="advantages__wrapper">
           <ul class="advantages__list">
             <li class="advantages__item">
               <div class="advantages__caption">Поднимает настроение</div>
@@ -55,43 +55,43 @@
         </div>
       </section>
       <section class="review slider">
-        <h2 class="review__header visually-hidden">Мнения о приложении Pink</h2>
-        <div class="review__list">
-          <div class="review__item">
+        <h2 class="review__header visually-hidden">Отзывы о приложении Pink</h2>
+        <div class="review__list slider__list">
+          <div class="review__item slider__item">
             <div class="review__text">
               <div class="review__caption">Николай Петров
               </div>
-              <p class="review__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А ещё я познакомился со своей будущей женой в комментариях к выложеной фотографии!"</p>
+              <blockquote class="review__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А ещё я познакомился со своей будущей женой в комментариях к выложеной фотографии!"</blockquote>
             </div>
           </div>
-          <div class="review__item">
+          <div class="review__item slider__item">
             <div class="review__text">
               <div class="review__caption">Николай Петров
               </div>
-              <p class="review__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А ещё я познакомился со своей будущей женой в комментариях к выложеной фотографии!"</p>
+              <blockquote class="review__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А ещё я познакомился со своей будущей женой в комментариях к выложеной фотографии!"</blockquote>
             </div>
           </div>
-          <div class="review__item">
+          <div class="review__item slider__item">
             <div class="review__text">
               <div class="review__caption">Николай Петров
               </div>
-              <p class="review__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А ещё я познакомился со своей будущей женой в комментариях к выложеной фотографии!"</p>
+              <blockquote class="review__description">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные вещи! А ещё я познакомился со своей будущей женой в комментариях к выложеной фотографии!"</blockquote>
             </div>
           </div>
         </div>
       </section>
       <section class="tariff slider">
         <h2 class="tariff__header visually-hidden">Тарифы на приложение Pink</h2>
-        <div class="tariff__list">
-          <div class="tariff__box">
+        <div class="tariff__list slider__list">
+          <div class="tariff__box slider__item">
             <table>
-              <tr><td class="tariff__header tariff__header--hit" colspan="2">Стандарт<span class="tariff__price">3,99 USD</span></td></tr>
+              <tr><td class="tariff__header tariff__header--hit" colspan="2"><span class="tariff__caption">Стандарт</span><span class="tariff__price">3,99 USD</span></td></tr>
               <tr><td class="tariff__item">Розовый фильтр</td><td class="tariff__change tariff__change--yes">Да</td></tr>
               <tr><td class="tariff__item">Смайлики</td><td class="tariff__change tariff__change--yes">Да</td></tr>
               <tr><td class="tariff__item">Комментарии</td><td class="tariff__change tariff__change--no">Нет</td></tr>
             </table>
           </div>
-          <div class="tariff__box slider__slide">
+          <div class="tariff__box slider__item">
             <table>
               <tr><td class="tariff__header" colspan="2"><span class="tariff__caption">Стандарт</span><span class="tariff__price">3,99 USD</span></td></tr>
               <tr><td class="tariff__item">Розовый фильтр</td><td class="tariff__change tariff__change--yes">Да</td></tr>
@@ -99,9 +99,9 @@
               <tr><td class="tariff__item">Комментарии</td><td class="tariff__change tariff__change--no">Нет</td></tr>
             </table>
           </div>
-          <div class="tariff__box">
+          <div class="tariff__box slider__item">
             <table>
-              <tr><td class="tariff__header" colspan="2">Стандарт<span class="tariff__price">3,99 USD</span></td></tr>
+              <tr><td class="tariff__header" colspan="2"><span class="tariff__caption">Стандарт</span><span class="tariff__price">3,99 USD</span></td></tr>
               <tr><td class="tariff__item">Розовый фильтр</td><td class="tariff__change tariff__change--yes">Да</td></tr>
               <tr><td class="tariff__item">Смайлики</td><td class="tariff__change tariff__change--yes">Да</td></tr>
               <tr><td class="tariff__item">Комментарии</td><td class="tariff__change tariff__change--no">Нет</td></tr>
