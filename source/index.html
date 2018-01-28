@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a class="page-header__link"><img class="page-header__logo page-header__logo--image" src="#" width="1" height="1" alt="Логотип приложения pink"></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -19,9 +19,11 @@
           </ul>
         </div>
       </nav>
-      <h1 class="page-header__header visually-hidden">Сайт приложения приложения pink</h1>
     </header>
-    <main class="page-main">
+    <main class="page-main container">
+      <div class="page-main__wrapper">
+        <h1 class="page-main__header visually-hidden">Сайт приложения приложения pink</h1>
+      </div>
       <section class="application">
         <h2 class="application__header visually-hidden">Виды приложения Pink</h2>
         <a class="application__reference" href="https://www.apple.com/ru/itunes">Скачать приложение</a>
@@ -120,7 +122,7 @@
           <input type="radio" name="toggle">
         </div>
       </section>
-      <footer>
+      <footer class="page-footer container">
         <section class="contacts">
           <h2 class="contacts__header visually-hidden">Адрес и телефон авторов приложеня Pink</h2>
           <p class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</p>
@@ -153,4 +155,3 @@
     </main>
   </body>
 </html>
-

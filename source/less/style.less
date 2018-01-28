@@ -1,40 +1,25 @@
-@import url("page-header.less");
-@import url("main-nav.less");
-@import url("page-main.less");
-@import url("application.less");
-@import url("advantages.less");
-@import url("review.less");
-@import url("tariff.less");
-@import url("contacts.less");
-@import url("map.less");
-@import url("competition.less");
+@import url("common/variables.less");
+@import url("layout/page-header.less");
+@import url("layout/main-nav.less");
+@import url("layout/page-main.less");
+@import url("index/application.less");
+@import url("index/advantages.less");
+@import url("index/review.less");
+@import url("index/tariff.less");
+@import url("layout/contacts.less");
+@import url("form/competition.less");
 @import url("social.less");
-@import url("copyright.less");
-@import url("popup.less");
-@import url("photo.less");
-@import url("photo-download.less");
-@import url("page-footer.less");
-
-
-
+@import url("layout/copyright.less");
+@import url("form/popup.less");
+@import url("photo/photo.less");
+@import url("photo/photo-download.less");
 
 @font-face {
-    font-family: "Open Sans";
-    src:
-        local("Open Sans"),
-        url("../fonts/opensans.woff") format("woff");
+  font-family: "Open Sans";
+  src:
+    local("Open Sans"),
+    url("../fonts/opensans.woff") format("woff");
 }
-
-/* Переменные */
-@blue-background: #283645;
-@blue-font: #283645;
-@white-font: #ffffff;
-@white-background: #ffffff;
-@main-color: #f2f2f2;
-@black-font: #000000;
-@pink-font: #d22856;
-@btn-color: #2aab6d;
-
 
 .visually-hidden {
   position: absolute;
@@ -43,14 +28,3 @@
   height: 1px;
   margin: -1px;
 }
-
-
-h1, h2, p, ul{
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
