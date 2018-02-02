@@ -1,9 +1,15 @@
 .photo {
+  display: flex;
+  flex-direction: column;
   background: #ffffff;
 }
 
 .photo__list {
   list-style: none;
+}
+
+.photo__item:first-child {
+  width: 100%;
 }
 
 .photo__title {
@@ -16,7 +22,6 @@
 
 .photo__about {
   background: @main-color;
-  padding: 18px 25px 23px 25px;
   margin-bottom: 20px;
 }
 
@@ -40,6 +45,7 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
+  width: 280px;
 }
 
 .photo__like {
@@ -48,4 +54,15 @@
   line-height: 24px;
   font-weight: lighter;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo__description {
+    width: 300px;
+  }
 }

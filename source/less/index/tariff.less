@@ -10,9 +10,24 @@
   font-weight: bold;
 }
 
+.tariff__list {
+  display: flex;
+}
+
+.tariff__box:first-child {
+  display: none;
+}
+
 .tariff__item {
   color: #283645;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
+}
+
+/* Стили для планшета*/
+@media (min-width: @tablet-width) {
+  .tariff__box:first-child {
+    display: block;
+  }
 }

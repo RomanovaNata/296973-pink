@@ -1,0 +1,33 @@
+.additional-block {
+  display: none;
+}
+
+/* Стили для планшета*/
+@media (min-width: @tablet-width) {
+  .additional-block {
+    display: block;
+  }
+
+  .additional-block__caption {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .additional-block__description {
+    color: #283645;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .additional-block__link {
+    color: #d53661;
+  }
+}
+
+/* Стили для десктопа*/
+@media (min-width: @desktop-width) {
+  .additional-block {
+    background-color: @main-color;
+  }
+}

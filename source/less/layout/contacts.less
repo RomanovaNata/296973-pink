@@ -3,6 +3,12 @@
   background: #ffffff;
 }
 
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .contacts__slogan {
   color: #283645;
   font-size: 24px;
@@ -15,9 +21,28 @@
   font-weight: bold;
 }
 
-
 .contacts__contact {
   color: #d22856;
   font-size: 24px;
   font-weight: lighter;
+}
+
+/* Стили для планшета*/
+@media (min-width: @tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contacts__header {
+    width: 100%;
+  }
+}
+
+/* Стили для десктопа*/
+@media (min-width: @desktop-width) {
+  .contacts__item:nth-child(2) {
+    order: 3;
+  }
 }

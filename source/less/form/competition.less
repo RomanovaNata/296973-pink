@@ -1,4 +1,5 @@
 .competition {
+  display: flex;
   background: #ffffff;
 }
 
@@ -7,6 +8,10 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
+}
+
+.competition__slogan--visible {
+  display: none;
 }
 
 .competition__caption {
@@ -30,9 +35,23 @@
   font-weight: normal;
 }
 
+.competition__header--invisible {
+  display: none;
+}
+
+.competition__fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
 .competition__fieldset:nth-child(3),
 .competition__fieldset:nth-child(5) {
   background: @main-color;
+}
+
+.competition__list {
+  display: flex;
+  flex-direction: column;
 }
 
 .competition__text {
@@ -64,4 +83,89 @@
   line-height: 30px;
   font-weight: lighter;
   text-transform: uppercase;
+}
+
+/* Стили для планшета*/
+@media (min-width: @tablet-width) {
+  .competition__slogan--visible {
+    display: block;
+  }
+
+  .competition__header--invisible {
+    display: block;
+  }
+
+  .competition__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Не отражается!*/
+  .competition__fieldset:nth-child(1) {
+    order: 0;
+  }
+
+  /* ФИО*/
+  .competition__fieldset:nth-child(2) {
+    order: 2;
+  }
+
+  /* С каким приложением путешествовали*/
+  .competition__fieldset:nth-child(5) {
+    order: 3;
+  }
+
+  /* Контактная информация*/
+  .competition__fieldset:nth-child(4) {
+    order: 4;
+  }
+
+  /* Бесбашенные достижения*/
+  .competition__fieldset:nth-child(3) {
+    order: 5;
+  }
+
+  /* Впечатления*/
+  .competition__fieldset:nth-child(6) {
+    order: 6;
+  }
+
+  /* Кнопка*/
+  .competition__service {
+    order: 7;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Стили для десктопа*/
+@media (min-width: @desktop-width) {
+  .competition__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  /* ФИО*/
+  .competition__fieldset:nth-child(2) {
+    min-width: 470px;
+  }
+
+  /* С каким приложением путешествовали*/
+  .competition__fieldset:nth-child(5) {
+    min-width: 470px;
+  }
+
+  /* Контактная информация*/
+  .competition__fieldset:nth-child(4) {
+    display: flex;
+    width: 100%;
+  }
+
+  /* Бесбашенные достижения*/
+  /* Впечатления*/
+  .competition__fieldset:nth-child(3),
+  .competition__fieldset:nth-child(6),
+  .competition__service {
+    width: 100%;
+  }
 }

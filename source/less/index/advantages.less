@@ -1,4 +1,6 @@
 .advantages {
+  display: flex;
+  flex-direction: column;
   background: #ffffff;
   margin-bottom: 620px;
 }
@@ -13,6 +15,11 @@
   background: @main-color;
 }
 
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+}
+
 .advantages__caption {
   color: #000000;
   font-size: 18px;
@@ -23,4 +30,24 @@
   color: #283645;
   font-size: 14px;
   font-weight: normal;
+}
+
+/*Стили для планшета*/
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/*Стили для десктопа*/
+@media (min-width: @desktop-width) {
+  .advantages__wrapper {
+    display: block;
+  }
+
+  .advantages__list {
+    display: flex;
+    flex-direction: row;
+  }
 }
