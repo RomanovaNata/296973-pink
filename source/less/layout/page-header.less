@@ -1,46 +1,12 @@
 .page-header {
-  /* Блочная модель */
   display: flex;
   flex-direction: column;
-  min-height: 464px;
-  /* Оформление */
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 50% #283645;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__block {
-  /* Блочная модель */
   display: flex;
   justify-content: space-between;
   height: 70px;
-}
-
-.page-header__header {
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: lighter;
-}
-
-.page-header__slogan {
-  display: none;
-}
-
-/* Стили для планшета*/
-@media (min-width: @tablet-width) {
-  .page-header {
-    min-height: 464px;
-  }
-
-  .page-header__slogan {
-    display: block;
-    color: #ffffff;
-    font-size: 40px;
-    font-weight: lighter;
-  }
-}
-
-/* Стили для десктопа*/
-@media (min-width: @desktop-width) {
-  .page-header {
-    min-height: 853px;
-  }
 }

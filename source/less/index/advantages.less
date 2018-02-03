@@ -13,11 +13,31 @@
 
 .advantages__wrapper {
   background: @main-color;
+
+  @media (min-width: @tablet-width) {
+    & {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    & {
+      display: block;
+    }
+  }
 }
 
 .advantages__list {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    & {
+      display: flex;
+      flex-direction: row;
+    }
+  }
 }
 
 .advantages__caption {
@@ -30,24 +50,4 @@
   color: #283645;
   font-size: 14px;
   font-weight: normal;
-}
-
-/*Стили для планшета*/
-@media (min-width: @tablet-width) {
-  .advantages__wrapper {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-/*Стили для десктопа*/
-@media (min-width: @desktop-width) {
-  .advantages__wrapper {
-    display: block;
-  }
-
-  .advantages__list {
-    display: flex;
-    flex-direction: row;
-  }
 }

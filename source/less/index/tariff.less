@@ -16,6 +16,12 @@
 
 .tariff__box:first-child {
   display: none;
+
+  @media (min-width: @tablet-width) {
+    &:first-child {
+      display: block;
+    }
+  }
 }
 
 .tariff__item {
@@ -23,11 +29,4 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
-}
-
-/* Стили для планшета*/
-@media (min-width: @tablet-width) {
-  .tariff__box:first-child {
-    display: block;
-  }
 }

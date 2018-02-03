@@ -1,5 +1,4 @@
 .contacts {
-  /* Оформление */
   background: #ffffff;
 }
 
@@ -7,6 +6,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (min-width: @tablet-width) {
+    & {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .contacts__slogan {
@@ -27,20 +34,12 @@
   font-weight: lighter;
 }
 
-/* Стили для планшета*/
 @media (min-width: @tablet-width) {
-  .contacts__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
   .contacts__header {
     width: 100%;
   }
 }
 
-/* Стили для десктопа*/
 @media (min-width: @desktop-width) {
   .contacts__item:nth-child(2) {
     order: 3;
