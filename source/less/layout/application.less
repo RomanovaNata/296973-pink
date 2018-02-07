@@ -1,0 +1,85 @@
+.application__download {
+  background: #1d2631;
+
+  @media (min-width: @tablet-width) {
+    & {
+      background: none;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      min-height: 350px;
+      margin-top: -350px;
+      margin-right: 340px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    & {
+      min-height: 400px;
+      margin-top: -400px;
+    }
+  }
+}
+
+.application__reference {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.application__list {
+  display: flex;
+}
+
+.application__description {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.application__wrapper {
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 50% #283645;
+  background-size: cover;
+  min-height: 271px;
+  margin-top: -68px;
+  display: flex;
+
+  @media (min-width: @tablet-width) {
+    & {
+      display: flex;
+      min-height: 620px;
+      margin-top: -123px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    & {
+      min-height: 853px;
+      margin-top: -110px;
+    }
+  }
+}
+
+.application__header {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-top: 225px;
+}
+
+.application__slogan {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: lighter;
+  display: none;
+  margin-top: 225px;
+
+  @media (min-width: @tablet-width) {
+    & {
+      display: block;
+    }
+  }
+}

@@ -1,18 +1,13 @@
-.contacts {
+.contacts__information {
   background: #ffffff;
+  text-align: center;
 }
 
-.contacts__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  @media (min-width: @tablet-width) {
-    & {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
+@media (min-width: @tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -38,10 +33,23 @@
   .contacts__header {
     width: 100%;
   }
+
+  .contacts__item--tel,
+  .contacts__item--email {
+    width: 50%;
+  }
+
+  .contacts__item--dom {
+    width: 100%;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .contacts__item:nth-child(2) {
+  .contacts__item {
+    width: 33.3333%;
+  }
+
+  .contacts__item--email {
     order: 3;
   }
 }

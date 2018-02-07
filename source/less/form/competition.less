@@ -1,6 +1,35 @@
 .competition {
-  display: flex;
   background: #ffffff;
+}
+
+.competition__wrapper {
+  display: flex;
+  width: 100%;
+
+  &--contact,
+  &--info {
+    flex-direction: column;
+  }
+
+  @media (min-width: @tablet-width) {
+    & {
+      flex-direction: row;
+    }
+
+    &--contact {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.competition__section {
+  @media (min-width: @desktop-width) {
+    &--contact {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+  }
 }
 
 .competition__slogan {
@@ -8,6 +37,7 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     & {
@@ -25,6 +55,13 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
+  width: 100%;
+}
+
+.competition__connection {
+  &--contact {
+    display: flex;
+  }
 }
 
 .competition__input {
@@ -32,6 +69,14 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
+
+  &--contact {
+    width: 80%;
+  }
+}
+
+.competition__img {
+  width: 20%;
 }
 
 .competition__header {
@@ -53,6 +98,7 @@
 
 .competition__fieldset {
   display: flex;
+  width: 100%;
   flex-direction: column;
 
   &--contact,
@@ -63,10 +109,12 @@
   @media (min-width: @tablet-width) {
     &--info {
       order: -3;
+      width: 50%;
     }
 
     &--app {
       order: -2;
+      width: 50%;
     }
 
     &--contact {
@@ -76,11 +124,11 @@
 
   @media (min-width: @desktop-width) {
     &--info {
-      min-width: 450px;
+      min-width: 50%;
     }
 
     &--app {
-      min-width: 450px;
+      min-width: 50%;
     }
 
     &--contact {
@@ -99,6 +147,17 @@
 .competition__list {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    & {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.competition__checkbox {
+  width: 25%;
 }
 
 .competition__text {
@@ -106,6 +165,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
+  width: 75%;
 }
 
 .competition__textarea {
@@ -113,6 +173,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
+  width: 100%;
 }
 
 .competition__submit {
@@ -132,21 +193,33 @@
   text-transform: uppercase;
 }
 
-@media (min-width: @tablet-width) {
-  .competition__items {
-    display: flex;
-    flex-direction: column;
-
-    @media (min-width: @desktop-width) {
-      & {
-        flex-direction: row;
-        flex-wrap: wrap;
-      }
+.competition__items {
+  @media (min-width: @tablet-width) {
+    & {
+      display: flex;
+      flex-direction: column;
     }
   }
 
-  .competition__service {
+  @media (min-width: @desktop-width) {
+    & {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.competition__service {
+  @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.competition__part {
+  @media (min-width: @desktop-width) {
+    & {
+      width: 33.333%;
+    }
   }
 }

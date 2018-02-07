@@ -1,5 +1,14 @@
 .photo-download {
   background: #ffffff;
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    & {
+      display: flex;
+      flex-direction: column;
+      margin: 0% 10% 0% 10%;
+    }
+  }
 }
 
 .photo-download__title {
@@ -19,11 +28,23 @@
   }
 }
 
+.photo-download__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.photo-download__input {
+  width: 100%;
+}
+
 .photo-download__btn {
   color: #d22856;
   font-size: 18px;
   line-height: 18px;
   font-weight: normal;
+  width: 100%;
 
   &--reset {
     color: #283645;

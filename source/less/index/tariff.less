@@ -2,26 +2,16 @@
   background: #ffffff;
 }
 
-.tariff__header:first-child {
+.tariff__list {
+  display: flex;
+}
+
+.tariff__header {
   background: #283645;
   color: #ffffff;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
-}
-
-.tariff__list {
-  display: flex;
-}
-
-.tariff__box:first-child {
-  display: none;
-
-  @media (min-width: @tablet-width) {
-    &:first-child {
-      display: block;
-    }
-  }
 }
 
 .tariff__item {
