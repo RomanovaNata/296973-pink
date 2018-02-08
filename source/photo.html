@@ -9,7 +9,7 @@
   <body>
     <header class="page-header container">
         <div class="main-nav">
-          <div class="main-nav__block">
+          <div class="main-nav__block"><!--При открытом меню используется класс с млдификатором "main-nav__block--open" для того, чтобы background-color: #283645;-->
             <a class="main-nav__link"><img class="main-nav__logo main-nav__logo--image" src="#" alt="Логотип приложения pink"></a>
             <button class="main-nav__toggle" type="button">Открыть меню</button>
           </div>
@@ -25,14 +25,12 @@
     </header>
     <main class="page-main container">
       <section class="application">
-        <div class="application__wrapper">
-          <h1 class="application__header">Фотографии пользователей</h1>
-        </div>
       </section>
+      <h1 class="page-main__header">Фотографии пользователей</h1>
         <div class="photo">
           <p class="photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-          <ul class="photo__items">
-            <li class="photo__first">
+          <ul class="photo__list">
+            <li class="photo__item photo__item--panorama">
               <article class="photo__wrapper">
                 <h2 class="photo__header visually-hidden">Фотография моста</h2>
                 <div class="container">
@@ -48,8 +46,6 @@
                 </div>
               </article>
             </li>
-            <li class="photo__next">
-              <ul class="photo__list">
                 <li class="photo__item">
                   <article class="photo__wrapper">
                     <h2 class="photo__header visually-hidden">Фотография машины</h2>
@@ -134,8 +130,6 @@
                     </div>
                   </article>
                 </li>
-              </ul>
-          </li>
         </ul>
         </div>
         <section class="photo-download">

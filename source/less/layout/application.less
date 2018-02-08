@@ -1,46 +1,4 @@
-.application__download {
-  background: #1d2631;
-
-  @media (min-width: @tablet-width) {
-    & {
-      background: none;
-      display: flex;
-      flex-direction: column;
-      width: 50%;
-      min-height: 350px;
-      margin-top: -350px;
-      margin-right: 340px;
-    }
-  }
-
-  @media (min-width: @desktop-width) {
-    & {
-      min-height: 400px;
-      margin-top: -400px;
-    }
-  }
-}
-
-.application__reference {
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: bold;
-}
-
-.application__list {
-  display: flex;
-}
-
-.application__description {
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: lighter;
-  text-align: center;
-}
-
-.application__wrapper {
+.application {
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 50% #283645;
   background-size: cover;
   min-height: 271px;
@@ -63,11 +21,27 @@
   }
 }
 
-.application__header {
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: lighter;
-  margin-top: 225px;
+.application__download {
+  background: #1d2631;
+  margin-top: 400px;
+  min-height: 272px;
+
+  @media (min-width: @tablet-width) {
+    & {
+      background: none;
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      min-height: 350px;
+      margin-top: 320px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    & {
+      min-height: 400px;
+    }
+  }
 }
 
 .application__slogan {
@@ -75,11 +49,40 @@
   font-size: 24px;
   font-weight: lighter;
   display: none;
-  margin-top: 225px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
     & {
       display: block;
+      font-size: 40px;
+      line-height: 40px;
     }
   }
+
+  @media (min-width: @desktop-width) {
+    & {
+      font-size: 50px;
+      line-height: 50px;
+    }
+  }
+}
+
+
+.application__reference {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.application__list {
+  display: flex;
+}
+
+.application__description {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: lighter;
+  text-align: center;
 }

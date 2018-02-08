@@ -3,7 +3,7 @@
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: space-between;
   position: relative;
   background-color: rgba(0, 0, 0, 0.5);
@@ -24,6 +24,10 @@
   min-height: 68px;
   width: 100%;
   margin: 0 auto;
+
+  &--open {
+    background-color: #283645;
+  }
 
   @media (min-width: @tablet-width) {
     & {

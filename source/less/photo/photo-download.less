@@ -1,14 +1,6 @@
 .photo-download {
   background: #ffffff;
   text-align: center;
-
-  @media (min-width: @desktop-width) {
-    & {
-      display: flex;
-      flex-direction: column;
-      margin: 0% 10% 0% 10%;
-    }
-  }
 }
 
 .photo-download__title {
@@ -16,6 +8,7 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
+  width: 100%;
 }
 
 .photo-download__wrapper {
@@ -24,6 +17,12 @@
   @media (min-width: @tablet-width) {
     & {
       display: flex;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    & {
+      margin: 0% 10% 0% 10%;
     }
   }
 }

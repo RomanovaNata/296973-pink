@@ -7,10 +7,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <div class="container">
+    <header class="page-header container">
         <div class="main-nav">
-          <div class="main-nav__block">
+          <div class="main-nav__block"><!--При открытом меню используется класс с млдификатором "main-nav__block--open" для того, чтобы background-color: #283645;-->
             <a class="main-nav__link"><img class="main-nav__logo main-nav__logo--image" src="#" alt="Логотип приложения pink"></a>
             <button class="main-nav__toggle" type="button">Открыть меню</button>
           </div>
@@ -23,17 +22,12 @@
             </ul>
           </nav>
         </div>
-      </div>
     </header>
-    <main class="page-main">
-      <div class="container">
+    <main class="page-main container">
       <section class="application">
         <div class="container">
-          <div class="application__wrapper">
-            <h1 class="application__header visually-hidden">Сайт приложения приложения pink</h1>
-            <p class="application__slogan">Взгляните на жизнь иначе!</p>
-          </div>
           <div class="application__download">
+            <p class="application__slogan">Взгляните на жизнь иначе!</p>
             <h2 class="application__header visually-hidden">Виды приложения Pink</h2>
             <a class="application__reference" href="https://www.apple.com/ru/itunes">Скачать приложение</a>
             <ul class="application__list">
@@ -45,6 +39,7 @@
           </div>
         </div>
       </section>
+        <h1 class="page-main__header visually-hidden">Сайт приложения приложения pink</h1>
         <section class="advantages">
             <h2 class="advantages__header visually-hidden">Преимущества приложения Pink</h2>
             <div class="advantages__slogan">
@@ -109,9 +104,9 @@
         <section class="tariff slider">
             <h2 class="visually-hidden">Тарифы на приложение Pink</h2>
             <div class="tariff__list slider__list">
-              <div class="tariff__item">
+              <div class="tariff__item tariff__item--invisible">
                 <div class="tariff__header visually-hidden">Опции тарифов</div>
-                <ul>
+                <ul class="tariff__option">
                   <li class="tariff__caption">Розовый фильтр</li>
                   <li class="tariff__caption">Смайлики</li>
                   <li class="tariff__caption">Комментарии</li>
@@ -119,65 +114,51 @@
               </div>
               <div class="tariff__item">
                 <div class="tariff__header"><span class="tariff__name">База</span><span class="tariff__price">1,99 USD</span></div>
-                <ul>
-                  <li class="tariff__change tariff__change--yes">да</li>
-                  <li class="tariff__change tariff__change--no">нет</li>
-                  <li class="tariff__change tariff__change--no">нет</li>
+                <ul class="tariff__option">
+                  <li class="tariff__change">
+                    <div class="tariff__subtitle">Розовый фильтр</div><div class="tariff__change--yes">да</div>
+                  </li>
+                  <li class="tariff__change">
+                    <div class="tariff__subtitle">Смайлики</div><div class="tariff__change--no">нет</div>
+                  </li>
+                  <li class="tariff__change">
+                    <div class="tariff__subtitle">Комментарии</div><div class="tariff__change--no">нет</div>
+                  </li>
                 </ul>
               </div>
               <div class="tariff__item">
                 <div class="tariff__header"><span class="tariff__name">Стандарт</span><span class="tariff__price">3,99 USD</span></div>
-                <ul>
-                  <li class="tariff__change tariff__change--yes">да</li>
-                  <li class="tariff__change tariff__change--yes">да</li>
-                  <li class="tariff__change tariff__change--no">нет</li>
+                <ul class="tariff__option">
+                  <li class="tariff__change">
+                    <div class="tariff__subtitle">Розовый фильтр</div><div class="tariff__change--yes">да</div>
+                  </li>
+                  <li class="tariff__change">
+                    <div class="tariff__subtitle">Смайлики</div><div class="tariff__change--yes">да</div>
+                  </li>
+                  <li class="tariff__change">
+                    <div class="tariff__subtitle">Комментарии</div><div class="tariff__change--no">нет</div>
+                  </li>
                 </ul>
               </div>
               <div class="tariff__item">
                 <div class="tariff__header"><span class="tariff__name">Анлим</span><span class="tariff__price">9,99 USD</span></div>
-                <ul>
-                  <li class="tariff__change tariff__change--yes">да</li>
-                  <li class="tariff__change tariff__change--yes">да</li>
-                  <li class="tariff__change tariff__change--yes">да</li>
+                <ul class="tariff__option">
+                  <li class="tariff__change">
+                    <div class="tariff__subtitle">Розовый фильтр</div><div class="tariff__change--yes">да</div>
+                  </li>
+                  <li class="tariff__change">
+                    <div class="tariff__subtitle">Смайлики</div><div class="tariff__change--yes">да</div>
+                  </li>
+                  <li class="tariff__change">
+                    <div class="tariff__subtitle">Комментарии</div><div class="tariff__change--yes">да</div>
+                  </li>
                 </ul>
               </div>
-<!--           <div class="tariff__box slider__item">
-                <table>
-                  <tr><td class="tariff__header"></td></tr>
-                  <tr><td class="tariff__item"><span class="tariff__row">Розовый фильтр</span></td></tr>
-                  <tr><td class="tariff__item"><span class="tariff__row">Смайлики</span></td></tr>
-                  <tr><td class="tariff__item"><span class="tariff__row">Комментарии</span></td></tr>
-                </table>
-              </div>
-              <div class="tariff__box slider__item">
-                <table>
-                  <tr><td class="tariff__header tariff__header--hit" colspan="2"><span class="tariff__caption">База</span><span class="tariff__price">3,99 USD</span></td></tr>
-                  <tr><td class="tariff__item"><span class="tariff__name tariff__name--hidden">Розовый фильтр</span></td><td class="tariff__change tariff__change--yes">Да</td></tr>
-                  <tr><td class="tariff__item"><span class="tariff__name tariff__name--hidden">Смайлики</span></td><td class="tariff__change tariff__change--yes">Нет</td></tr>
-                  <tr><td class="tariff__item"><span class="tariff__name tariff__name--hidden">Комментарии</span></td><td class="tariff__change tariff__change--no">Нет</td></tr>
-                </table>
-              </div>
-              <div class="tariff__box slider__item">
-                <table>
-                  <tr><td class="tariff__header" colspan="2"><span class="tariff__caption">Стандарт</span><span class="tariff__price">3,99 USD</span></td></tr>
-                  <tr><td class="tariff__item"><span class="tariff__name tariff__name--hidden">Розовый фильтр</span></td><td class="tariff__change tariff__change--yes">Да</td></tr>
-                  <tr><td class="tariff__item"><span class="tariff__name tariff__name--hidden">Смайлики</span></td><td class="tariff__change tariff__change--yes">Да</td></tr>
-                  <tr><td class="tariff__item"><span class="tariff__name tariff__name--hidden">Комментарии</span></td><td class="tariff__change tariff__change--no">Нет</td></tr>
-                </table>
-              </div>
-              <div class="tariff__box slider__item">
-                <table>
-                  <tr><td class="tariff__header" colspan="2"><span class="tariff__caption">Анлим</span><span class="tariff__price">3,99 USD</span></td></tr>
-                  <tr><td class="tariff__item"><span class="tariff__name tariff__name--hidden">Розовый фильтр</span></td><td class="tariff__change tariff__change--yes">Да</td></tr>
-                  <tr><td class="tariff__item"><span class="tariff__name tariff__name--hidden">Смайлики</span></td><td class="tariff__change tariff__change--yes">Да</td></tr>
-                  <tr><td class="tariff__item"><span class="tariff__name tariff__name--hidden">Комментарии</span></td><td class="tariff__change tariff__change--no">Да</td></tr>
-                </table>
-              </div> -->
             </div>
             <div class="tariff__controls">
-              <input type="radio" name="toggle">
-              <input type="radio" name="toggle" checked>
-              <input type="radio" name="toggle">
+              <div class="tariff__toggle"></div>
+              <div class="tariff__toggle tariff__toggle--active"></div>
+              <div class="tariff__toggle"></div>
             </div>
         </section>
         <section class="contacts">
@@ -212,7 +193,6 @@
               <img src="img/bg-map-mobile@1x.png" alt="Карта проезда">
             </div>
         </section>
-      </div>
     </main>
     <footer class="page-footer">
       <div class="container">
@@ -232,5 +212,18 @@
         </div>
       </div>
     </footer>
+    <script>
+            let active = 0;
+      const width = 280;
+      const tariff__list = document.querySelector('.tariff__list');
+      const tariff__controls = document.querySelectorAll('.tariff__controls');
+
+      for (let i=0; i<tariff__controls.length; i++) {
+        tariff__controls[i].onclick = function() {
+          active = i;
+          tariff__list.style.left = -(active * (width)) + 'px';
+        }
+      }
+    </script>
   </body>
 </html>
