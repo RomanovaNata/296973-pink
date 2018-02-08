@@ -1,0 +1,33 @@
+.additional-block {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    & {
+      display: block;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    & {
+      background-color: @main-color;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additional-block__caption {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .additional-block__description {
+    color: #283645;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  .additional-block__link {
+    color: #d53661;
+  }
+}

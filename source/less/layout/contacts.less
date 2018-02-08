@@ -1,6 +1,14 @@
-.contacts {
-  /* Оформление */
+.contacts__information {
   background: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .contacts__slogan {
@@ -15,9 +23,33 @@
   font-weight: bold;
 }
 
-
 .contacts__contact {
   color: #d22856;
   font-size: 24px;
   font-weight: lighter;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__header {
+    width: 100%;
+  }
+
+  .contacts__item--tel,
+  .contacts__item--email {
+    width: 50%;
+  }
+
+  .contacts__item--dom {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__item {
+    width: 33.3333%;
+  }
+
+  .contacts__item--email {
+    order: 3;
+  }
 }

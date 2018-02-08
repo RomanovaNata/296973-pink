@@ -1,5 +1,15 @@
 .review {
   background: #ffffff;
+  text-align: center;
+}
+
+.review__text {
+  @media (min-width: @tablet-width) {
+    & {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+  }
 }
 
 .review__caption {
@@ -14,4 +24,14 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
+}
+
+.review__info {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    & {
+      display: block;
+    }
+  }
 }

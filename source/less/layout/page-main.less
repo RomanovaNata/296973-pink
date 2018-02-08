@@ -1,14 +1,31 @@
 .page-main {
   background-color: @main-color;
-  width: 320px;
 }
 
 .page-main__header {
   color: #ffffff;
   font-size: 24px;
+  text-align: center;
   font-weight: lighter;
-}
+  margin-top: -220px;
+  margin-bottom: 50px;
+  padding-top: 50px;
 
-.page-main__wrapper {
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 50% #283645;
+  @media (min-width: @tablet-width) {
+    & {
+      font-size: 50px;
+      line-height: 50px;
+      margin-top: -450px;
+      margin-bottom: 80px;
+      padding-top: 50px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    & {
+      margin-top: -700px;
+      margin-bottom: 80px;
+      padding-top: 50px;
+    }
+  }
 }

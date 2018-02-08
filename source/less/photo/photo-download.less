@@ -1,5 +1,6 @@
 .photo-download {
   background: #ffffff;
+  text-align: center;
 }
 
 .photo-download__title {
@@ -7,10 +8,34 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
+  width: 100%;
 }
 
 .photo-download__wrapper {
   background: @main-color;
+
+  @media (min-width: @tablet-width) {
+    & {
+      display: flex;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    & {
+      margin: 0% 10% 0% 10%;
+    }
+  }
+}
+
+.photo-download__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.photo-download__input {
+  width: 100%;
 }
 
 .photo-download__btn {
@@ -18,9 +43,10 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: normal;
-}
+  width: 100%;
 
-.photo-download__btn--reset {
-  color: #283645;
-  opacity: 0.1;
+  &--reset {
+    color: #283645;
+    opacity: 0.1;
+  }
 }

@@ -3,160 +3,167 @@
   <head>
     <meta charset="utf-8">
     <title>Приложение «pink»</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header container">
-      <a class="page-header__link" href="index.html"><img class="page-header__logo page-header__logo--image" src="#" width="1" height="1" alt="Логотип приложения pink"></a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-            <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Фотографии</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">Html academy</a></li>
-          </ul>
+        <div class="main-nav">
+          <div class="main-nav__block"><!--При открытом меню используется класс с млдификатором "main-nav__block--open" для того, чтобы background-color: #283645;-->
+            <a class="main-nav__link"><img class="main-nav__logo main-nav__logo--image" src="#" alt="Логотип приложения pink"></a>
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+          </div>
+          <nav class="main-nav__wrapper">
+            <ul class="main-nav__list main-nav__list--open main-nav__list--closed">
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+              <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Фотографии</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">Html academy</a></li>
+            </ul>
+          </nav>
         </div>
-      </nav>
     </header>
     <main class="page-main container">
-      <div class="page-main__wrapper">
-        <h1 class="page-main__header">Фотографии пользователей</h1>
-      </div>
-      <div class="photo">
-        <p class="photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <ul class="photo__list">
-          <li class="photo__item">
-            <article class="photo__wrapper">
-              <h2 class="photo__header visually-hidden">Фотография моста</h2>
-              <a class="photo__link photo__link--big photo__link--hit" href="#">
-                <img  class="photo__img" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография обработанная в приложении pink">
-              </a>
-              <div class="photo__about">
-                <div class="photo__autor">Анна</div>
-                <div class="photo__date">(5 минут назад)</div>
-                <p class="photo__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-                <div class="photo__like">Нравится: 215</div>
-              </div>
-            </article>
-          </li>
-          <li class="photo__item">
-            <article class="photo__wrapper">
-              <h2 class="photo__header visually-hidden">Фотография машины</h2>
-              <a class="photo__link photo__link--big" href="#">
-                <img  class="photo__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография обработанная в приложении pink">
-              </a>
-              <div class="photo__about">
-                <div class="photo__autor">Левон</div>
-                <div class="photo__datе">(5 часов назад)</div>
-                <p class="photo__description">Вчера он на Луну летал, сегодня в руки к нам попал.</p>
-                <div class="photo__like">Нравится: 356</div>
-              </div>
-            </article>
-          </li>
-          <li class="photo__item">
-            <article class="photo__wrapper">
-              <h2 class="photo__header visually-hidden">Фотография барабанов</h2>
-              <a class="photo__link photo__link--big" href="#">
-                <img  class="photo__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография обработанная в приложении pink">
-              </a>
-              <div class="photo__about">
-                <div class="photo__autor">Антон</div>
-                <div class="photo__datе">(12 часов назад)</div>
-                <p class="photo__description">Соседи будут рады!</p>
-                <div class="photo__like">Нравится: 666</div>
-              </div>
-            </article>
-          </li>
-          <li class="photo__item">
-            <article class="photo__wrapper">
-              <h2 class="photo__header visually-hidden">Фотография клетки</h2>
-              <a class="photo__link photo__link--big" href="#">
-                <img  class="photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография обработанная в приложении pink">
-              </a>
-              <div class="photo__about">
-                <div class="photo__autor">Борис</div>
-                <div class="photo__datе">(20 часво назад)</div>
-                <p class="photo__description">Здесь могла быть ваша цитата о высоком и вечном!</p>
-                <div class="photo__like">Нравится: 215</div>
-              </div>
-            </article>
-          </li>
-          <li class="photo__item">
-            <article class="photo__wrapper">
-              <h2 class="photo__header visually-hidden">Фотография Кубанской бахчи</h2>
-              <a class="photo__link photo__link--big" href="#">
-                <img  class="photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография обработанная в приложении pink">
-              </a>
-              <div class="photo__about">
-                <div class="photo__autor">Сергей</div>
-                <div class="photo__datе">(25 часов назад)</div>
-                <p class="photo__description">Самая кубанская в мире!</p>
-                <div class="photo__like">Нравится: 4</div>
-              </div>
-            </article>
-          </li>
-          <li class="photo__item">
-            <article class="photo__wrapper">
-              <h2 class="photo__header visually-hidden">Фотография ног</h2>
-              <a class="photo__link photo__link--big" href="#">
-                <img  class="photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография обработанная в приложении pink">
-              </a>
-              <div class="photo__about">
-                <div class="photo__autor">Максим</div>
-                <div class="photo__datе">(40 часво назад)</div>
-                <p class="photo__description">Где снег-то?</p>
-                <div class="photo__like">Нравится: 150</div>
-              </div>
-            </article>
-          </li>
-          <li class="photo__item">
-            <article class="photo__wrapper">
-              <h2 class="photo__header visually-hidden">Фотография крыла самолета</h2>
-              <a class="photo__link photo__link--big" href="#">
-                <img  class="photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография обработанная в приложении pink">
-              </a>
-              <div class="photo__about">
-                <div class="photo__autor">Надежда</div>
-                <div class="photo__datе">(45 часов назад)</div>
-                <p class="photo__description">Всем GM и взаимные лайки!</p>
-                <div class="photo__like">Нравится: 2560</div>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </div>
-      <section class="photo-download">
-        <h2 class="photo-download__header visually-hidden">Закачать фотографию</h2>
-        <p class="photo-download__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
-        <div class="photo-download__wrapper">
-          <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фотография обработанная в приложении pink">
-          <form action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
-            <button class="photo-download__crop" type="button"><img src="#" width="1" height="1" alt="Обрезать"></button>
-            <button class="photo-download__fill" type="button"><img src="#" width="1" height="1" alt="Заливка"></button>
-            <button class="photo-download__contrast" type="button"><img src="#" width="1" height="1" alt="Контраст"></button>
-            <input class="photo-download__file" type="file" name="file-download">
-            <input class="photo-download__range" type="range" name="range">
-            <button class="photo-download__btn" type="submit">Запостить</button>
-            <button class="photo-download__btn photo-download__btn--reset" type="reset">Отмена</button>
-          </form>
-        </div>
+      <section class="application">
       </section>
+      <h1 class="page-main__header">Фотографии пользователей</h1>
+        <div class="photo">
+          <p class="photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <ul class="photo__list">
+            <li class="photo__item photo__item--panorama">
+              <article class="photo__wrapper">
+                <h2 class="photo__header visually-hidden">Фотография моста</h2>
+                <div class="container">
+                  <a class="photo__link photo__link--big photo__link--hit photo__link--first" href="#">
+                    <img  class="photo__img photo__img--first" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Фотография обработанная в приложении pink">
+                  </a>
+                </div>
+                <div class="photo__about">
+                  <div class="photo__autor">Анна</div>
+                  <div class="photo__date">(5 минут назад)</div>
+                  <p class="photo__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+                  <div class="photo__like">Нравится: 215</div>
+                </div>
+              </article>
+            </li>
+                <li class="photo__item">
+                  <article class="photo__wrapper">
+                    <h2 class="photo__header visually-hidden">Фотография машины</h2>
+                    <a class="photo__link photo__link--big" href="#">
+                      <img  class="photo__img" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Фотография обработанная в приложении pink">
+                    </a>
+                    <div class="photo__about">
+                      <div class="photo__autor">Левон</div>
+                      <div class="photo__datе">(5 часов назад)</div>
+                      <p class="photo__description">Вчера он на Луну летал, сегодня в руки к нам попал.</p>
+                      <div class="photo__like">Нравится: 356</div>
+                    </div>
+                  </article>
+                </li>
+                <li class="photo__item">
+                  <article class="photo__wrapper">
+                    <h2 class="photo__header visually-hidden">Фотография барабанов</h2>
+                    <a class="photo__link photo__link--big" href="#">
+                      <img  class="photo__img" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Фотография обработанная в приложении pink">
+                    </a>
+                    <div class="photo__about">
+                      <div class="photo__autor">Антон</div>
+                      <div class="photo__datе">(12 часов назад)</div>
+                      <p class="photo__description">Соседи будут рады!</p>
+                      <div class="photo__like">Нравится: 666</div>
+                    </div>
+                  </article>
+                </li>
+                <li class="photo__item">
+                  <article class="photo__wrapper">
+                    <h2 class="photo__header visually-hidden">Фотография клетки</h2>
+                    <a class="photo__link photo__link--big" href="#">
+                      <img  class="photo__img" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Фотография обработанная в приложении pink">
+                    </a>
+                    <div class="photo__about">
+                      <div class="photo__autor">Борис</div>
+                      <div class="photo__datе">(20 часво назад)</div>
+                      <p class="photo__description">Здесь могла быть ваша цитата о высоком и вечном!</p>
+                      <div class="photo__like">Нравится: 215</div>
+                    </div>
+                  </article>
+                </li>
+                <li class="photo__item">
+                  <article class="photo__wrapper">
+                    <h2 class="photo__header visually-hidden">Фотография Кубанской бахчи</h2>
+                    <a class="photo__link photo__link--big" href="#">
+                      <img  class="photo__img" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Фотография обработанная в приложении pink">
+                    </a>
+                    <div class="photo__about">
+                      <div class="photo__autor">Сергей</div>
+                      <div class="photo__datе">(25 часов назад)</div>
+                      <p class="photo__description">Самая кубанская в мире!</p>
+                      <div class="photo__like">Нравится: 4</div>
+                    </div>
+                  </article>
+                </li>
+                <li class="photo__item">
+                  <article class="photo__wrapper">
+                    <h2 class="photo__header visually-hidden">Фотография ног</h2>
+                    <a class="photo__link photo__link--big" href="#">
+                      <img  class="photo__img" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фотография обработанная в приложении pink">
+                    </a>
+                    <div class="photo__about">
+                      <div class="photo__autor">Максим</div>
+                      <div class="photo__datе">(40 часво назад)</div>
+                      <p class="photo__description">Где снег-то?</p>
+                      <div class="photo__like">Нравится: 150</div>
+                    </div>
+                  </article>
+                </li>
+                <li class="photo__item">
+                  <article class="photo__wrapper">
+                    <h2 class="photo__header visually-hidden">Фотография крыла самолета</h2>
+                    <a class="photo__link photo__link--big" href="#">
+                      <img  class="photo__img" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Фотография обработанная в приложении pink">
+                    </a>
+                    <div class="photo__about">
+                      <div class="photo__autor">Надежда</div>
+                      <div class="photo__datе">(45 часов назад)</div>
+                      <p class="photo__description">Всем GM и взаимные лайки!</p>
+                      <div class="photo__like">Нравится: 2560</div>
+                    </div>
+                  </article>
+                </li>
+        </ul>
+        </div>
+        <section class="photo-download">
+            <h2 class="photo-download__header visually-hidden">Закачать фотографию</h2>
+            <p class="photo-download__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+            <div class="photo-download__wrapper">
+              <img src="img/photo-road-mobile@1x.jpg" width="374" height="280" alt="Фотография обработанная в приложении pink">
+              <form class="photo-download__form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+                <input class="photo-download__input photo-download__input--crop" type="range">
+                <input class="photo-download__input photo-download__input--fill" type="range">
+                <input class="photo-download__input photo-download__input--ontrast" type="range">
+                <input class="photo-download__input photo-download__input--file" type="file" name="file-download">
+                <input class="photo-download__input photo-download__input--range" type="range" name="range">
+                <button class="photo-download__btn" type="submit">Запостить</button>
+                <button class="photo-download__btn photo-download__btn--reset" type="reset">Отмена</button>
+              </form>
+            </div>
+        </section>
     </main>
     <footer class="page-footer container">
-      <img class="page-footer__logo" src="#" width="1" height="1" alt="Логотип приложения Pink">
-      <ul class="social">
-        <li class="social__btn social__btn--tw"><a href="#">Twitter</a></li>
-        <li class="social__btn social__btn--fb"><a href="#">Facebook</a></li>
-        <li class="social__btn social__btn--yt"><a href="#">Youtube</a></li>
-      </ul>
-      <div class="copyright">
-        <span class="copyright__text">Разработано</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__picture" src="#" width="1" height="1" alt="разработано htmlacademy">
-        </a>
-      </div>
+        <div class="page-footer__wrapper">
+          <img class="page-footer__logo" src="#" alt="Логотип приложения Pink">
+          <ul class="social">
+            <li class="social__btn social__btn--tw"><a href="#">Twitter</a></li>
+            <li class="social__btn social__btn--fb"><a href="#">Facebook</a></li>
+            <li class="social__btn social__btn--yt"><a href="#">Youtube</a></li>
+          </ul>
+          <div class="copyright">
+            <span class="copyright__text">Разработано</span>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <img class="copyright__picture" src="#" alt="разработано htmlacademy">
+            </a>
+          </div>
+        </div>
     </footer>
   </body>
 </html>

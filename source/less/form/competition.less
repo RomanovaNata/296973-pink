@@ -2,11 +2,52 @@
   background: #ffffff;
 }
 
+.competition__wrapper {
+  display: flex;
+  width: 100%;
+
+  &--contact,
+  &--info {
+    flex-direction: column;
+  }
+
+  @media (min-width: @tablet-width) {
+    & {
+      flex-direction: row;
+    }
+
+    &--contact {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+.competition__section {
+  @media (min-width: @desktop-width) {
+    &--contact {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+  }
+}
+
 .competition__slogan {
   color: #283645;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    & {
+      display: block;
+    }
+  }
+
+  &--visible {
+    display: none;
+  }
 }
 
 .competition__caption {
@@ -14,6 +55,13 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
+  width: 100%;
+}
+
+.competition__connection {
+  &--contact {
+    display: flex;
+  }
 }
 
 .competition__input {
@@ -21,6 +69,14 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
+
+  &--contact {
+    width: 80%;
+  }
+}
+
+.competition__img {
+  width: 20%;
 }
 
 .competition__header {
@@ -28,11 +84,80 @@
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
+
+  &--invisible {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--invisible {
+      display: block;
+    }
+  }
 }
 
-.competition__fieldset:nth-child(3),
-.competition__fieldset:nth-child(5) {
-  background: @main-color;
+.competition__fieldset {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  &--contact,
+  &--description {
+    background: @main-color;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--info {
+      order: -3;
+      width: 50%;
+    }
+
+    &--app {
+      order: -2;
+      width: 50%;
+    }
+
+    &--contact {
+      order: -1;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--info {
+      min-width: 50%;
+    }
+
+    &--app {
+      min-width: 50%;
+    }
+
+    &--contact {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    &--achievements,
+    &--description {
+      width: 100%;
+    }
+  }
+}
+
+.competition__list {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    & {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.competition__checkbox {
+  width: 25%;
 }
 
 .competition__text {
@@ -40,6 +165,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
+  width: 75%;
 }
 
 .competition__textarea {
@@ -47,6 +173,7 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
+  width: 100%;
 }
 
 .competition__submit {
@@ -64,4 +191,35 @@
   line-height: 30px;
   font-weight: lighter;
   text-transform: uppercase;
+}
+
+.competition__items {
+  @media (min-width: @tablet-width) {
+    & {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    & {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.competition__service {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.competition__part {
+  @media (min-width: @desktop-width) {
+    & {
+      width: 33.333%;
+    }
+  }
 }
