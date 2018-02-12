@@ -2,30 +2,49 @@
   background-color: @main-color;
 }
 
-.page-main__header {
-  color: #ffffff;
-  font-size: 24px;
-  text-align: center;
-  font-weight: lighter;
-  margin-top: -220px;
-  margin-bottom: 50px;
-  padding-top: 50px;
+.page-main__wrapper {
+  display: flex;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 50% #283645;
+  background-size: cover;
+  min-height: 271px;
+  margin-top: -68px;
 
   @media (min-width: @tablet-width) {
     & {
-      font-size: 50px;
-      line-height: 50px;
-      margin-top: -450px;
-      margin-bottom: 80px;
-      padding-top: 50px;
+      min-height: 330px;
+      margin-top: -123px;
     }
   }
 
   @media (min-width: @desktop-width) {
     & {
-      margin-top: -700px;
-      margin-bottom: 80px;
-      padding-top: 50px;
+      min-height: 395px;
+      margin-top: -110px;
     }
+  }
+}
+
+.page-main__header {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 100px;
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  padding-left: 6%;
+  padding-right: 6%;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: normal;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 180px;
+    padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }

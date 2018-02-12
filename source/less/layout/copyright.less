@@ -1,11 +1,44 @@
-.copyright__link {
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 45px;
+
+  @media (min-width: @tablet-width) {
+    width: 30%;
+    padding-top: 0;
+  }
+}
+
+.copyright__text {
+  display: block;
   color: #283645;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
-  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  margin-right: 10%;
 
   @media (min-width: @tablet-width) {
     width: 33.3333%;
+    margin-right: 20%;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 1%;
+  }
+}
+
+.copyright__link {
+  fill: #d22856;
+
+  &:hover {
+    fill: #283645;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

@@ -24,6 +24,7 @@
   min-height: 68px;
   width: 100%;
   margin: 0 auto;
+  border-bottom: 1px solid #000101;
 
   &--open {
     background-color: #283645;
@@ -37,30 +38,182 @@
 
   @media (min-width: @desktop-width) {
     & {
-      width: 20%;
+      width: 44%;
       min-height: 110px;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1;
     }
   }
 }
 
+.main-nav__logo {
+  margin-left: 20px;
+  margin-top: 20px;
+
+  &--mob {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tab {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+
+  display: block;
+  width: 70px;
+  height: 50px;
+
+  background-color: #283645;
+
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+/*закрытое меню - кнопка-бургер*/
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  background-color: #d22856;
+  box-shadow: 0 8px 0 0 #d22856, 0 16px 0 0 #d22856;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  opacity: 0.3;
+}
+
+/*открытое меню - крестик*/
+.main-nav--opened .main-nav__toggle {
+  position: absolute;
+  top: 20;
+  right: 20;
+  z-index: 2;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: #293646;
+  cursor: pointer;
+  border: none;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 23px;
+    height: 3px;
+    background-color: #ffffff;
+
+    @media (min-width: @tablet-width) {
+      & {
+        top: 40px;
+      }
+    }
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: #d22856;
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+/*открытое меню*/
+.main-nav--opened .main-nav__wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #293646;
+
+  @media (min-width: @desktop-width) {
+    & {
+      width: 56%;
+    }
+  }
+}
+
+/*открытие и закрытие меню без js*/
+@media (max-width: @desktop-width) {
+  .main-nav--closed .main-nav__item {
+    display: none;
+  }
+}
+
+/*иконка-бургер и крестик не видны без js*/
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+/*без js обёртка находится в потоке и все пункты меню видны*/
+.main-nav--nojs .main-nav__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.main-nav--nojs .main-nav__item {
+  display: block;
+}
+
+/*пункты меню*/
 .main-nav__list {
   list-style: none;
+  text-align: center;
+
   margin: 0;
   padding: 0;
   width: 100%;
   background-color: #283645;
 
-  &--open {
-    display: block;
-  }
-
-  &--closed {
-    display: none;
-  }
-
   @media (min-width: @desktop-width) {
     & {
       display: flex;
+      flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-between;
       background-color: rgba(0, 0, 0, 0.5);
@@ -69,24 +222,39 @@
   }
 }
 
-.main-nav__wrapper {
-  @media (min-width: @desktop-width) {
-    & {
-      width: 80%;
-    }
-  }
-}
-
-.main-nav__item {
+.main-nav__list a {
+  display: block;
+  text-decoration: none;
+  padding: 15px 0;
   color: #ffffff;
   font-size: 18px;
   line-height: 32px;
   font-weight: bold;
-  text-align: center;
+  text-transform: uppercase;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000101;
+
+  @media (min-width: @desktop-width) {
+    text-transform: none;
+    line-height: 18px;
+    font-weight: normal;
+    border: none;
+  }
 }
 
-@media (min-width: @desktop-width) {
-  .main-nav__toggle {
-    display: none;
+.main-nav__list a[href] {
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav__item {
+  @media (min-width: @desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 45px;
   }
 }

@@ -5,7 +5,7 @@
 .tariff__list {
   display: flex;
   width: 840px;
-  height: 280px;
+  min-height: 280px;
   background-color: @main-color;
   overflow: hidden;
   position: relative;
@@ -16,6 +16,10 @@
     & {
       width: 100%;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 10%;
   }
 }
 
@@ -44,23 +48,108 @@
 }
 
 .tariff__header {
-  background: #283645;
+  height: 80px;
+  position: relative;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
+  text-align: center;
+  background: #283645;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+
+  &--invisible {
+    display: none;
+  }
+
+  &--hit::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 70px;
+    height: 73px;
+    background: url("../../img/bg-hit.svg") no-repeat;
+
+    @media (min-width: @tablet-width) {
+      background: url("../../img/bg-hit-tablet.svg") no-repeat;
+    }
+  }
+
+  &--hit::before {
+    content: "ХИТ";
+    position: absolute;
+    top: 0;
+    left: -2px;
+    width: 70px;
+    height: 73px;
+    transform: rotate(-45deg);
+    z-index: 1;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 100px;
+  }
+}
+
+.tariff__name {
+  display: block;
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tariff__price {
+  font-weight: lighter;
 }
 
 .tariff__option {
   list-style: none;
+
+  &--invisible {
+    padding-top: 80px;
+
+    @media (min-width: @desktop-width) {
+      padding-top: 100px;
+    }
+  }
 }
 
 .tariff__change {
   display: flex;
+  height: 60px;
   justify-content: space-between;
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #ffffff;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+
+
+  &--no {
+    font-size: 0;
+    fill: #f25b26;
+  }
+
+  &--yes {
+    font-size: 0;
+    fill: #3dc644;
+  }
+
+  @media (min-width: @tablet-width) {
+    height: 45px;
+    padding: 10px 5%;
+  }
 }
 
 .tariff__subtitle {
+  text-transform: uppercase;
+  color: #283645;
+  font-size: 14px;
+  line-height: 30px;
+
+
   @media (min-width: @tablet-width) {
     & {
       display: none;
@@ -68,24 +157,50 @@
   }
 }
 
+.tariff__caption {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    text-transform: uppercase;
+    color: #283645;
+    font-size: 14px;
+    line-height: 30px;
+  }
+}
+
 .tariff__controls {
   text-align: center;
   font-size: 0;
   background-color: @main-color;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .tariff__toggle {
+  position: relative;
   display: inline-block;
   vertical-align: middle;
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  border: 3px solid #b5b9be;
-  margin: 5px;
+  border: 5px solid #b5b9be;
+  margin: 10px;
   cursor: pointer;
 
   &--active {
-    border: 6px solid #283645;
+    border: 10px solid #283645;
     cursor: default;
+  }
+
+  &--active::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
   }
 }
