@@ -7,26 +7,47 @@
 
   @media (min-width: @tablet-width) {
     & {
-      min-height: 620px;
-      /*margin-top: -123px;*/
+      min-height: 742px;
+      margin-top: -123px;
     }
   }
 
   @media (min-width: @desktop-width) {
     & {
       min-height: 853px;
-      /*margin-top: -110px;*/
-      margin-bottom: 119px;
+      margin-top: -110px;
+      /*margin-bottom: 119px;*/
     }
   }
 }
 
 .application__download {
-  width: 100%;
-  background: #1d2631;
-  min-height: 272px;
-  padding: 20px;
-  margin-top: 395px;
+  position: relative;
+  width: 340px;
+  background-color: #1d2631;
+  min-height: 270px;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 464px;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    top: -286px;
+    left: 0;
+    width: 258px;
+    height: 286px;
+    background-image: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 1;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     & {
@@ -44,9 +65,9 @@
     & {
       min-height: 400px;
       margin-top: 80px;
-      margin-left: 120px;
+      margin-left: 110px;
       margin-right: 700px;
-      padding: 20px 0;
+      padding-top: 10px;
     }
   }
 }
@@ -62,9 +83,9 @@
     & {
       display: block;
       font-size: 40px;
-      line-height: 40px;
-      padding-bottom: 40px;
-      padding-top: 0;
+      line-height: 50px;
+      padding-bottom: 25px;
+      padding-top: 130px;
       padding-right: 35px;
       padding-left: 35px;
     }
@@ -73,12 +94,11 @@
   @media (min-width: @desktop-width) {
     & {
       font-size: 50px;
-      line-height: 50px;
-      padding-bottom: 65px;
+      line-height: 60px;
+      padding-bottom: 50px;
     }
   }
 }
-
 
 .application__reference {
   display: block;
@@ -92,14 +112,15 @@
   border: 3px solid #ffffff;
   border-radius: 50px;
   margin-bottom: 30px;
-  margin-top: 10px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 43px;
   }
 
   @media (min-width: @desktop-width) {
     margin-bottom: 65px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -123,7 +144,7 @@
   margin-bottom: 20px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 
   @media (min-width: @desktop-width) {
@@ -136,7 +157,7 @@
   &--apple {
     width: 57px;
     height: 57px;
-    background: url("../../img/logo-apple.svg") no-repeat;
+    background: url("../img/logo-apple.svg") no-repeat;
 
     @media (min-width: @tablet-width) {
       margin-left: 10px;
@@ -144,31 +165,31 @@
     }
 
     @media (min-width: @desktop-width) {
-      margin-left: 0;
+      margin-left: -10px;
     }
   }
 
   &--android {
     width: 50px;
     height: 50px;
-    background: url("../../img/logo-android.svg") no-repeat;
-    margin-left: -5px;
+    background: url("../img/logo-android.svg") no-repeat;
+    margin-left: 0;
     margin-top: 10px;
   }
 
   &--microsoft {
     width: 45px;
     height: 45px;
-    background: url("../../img/logo-microsoft.svg") no-repeat;
+    background: url("../img/logo-microsoft.svg") no-repeat;
     margin-top: 10px;
 
     @media (min-width: @tablet-width) {
-      margin-right: 35px;
+      margin-right: 10px;
       margin-top: 15px;
     }
 
     @media (min-width: @desktop-width) {
-      margin-right: 20px;
+      margin-right: -10px;
     }
   }
 }

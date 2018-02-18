@@ -6,11 +6,7 @@
 .advantages__slogan {
   position: relative;
   padding-top: 40px;
-  padding-bottom: 100px;
-
-  @media (min-width: @tablet-width) {
-    padding-bottom: 90px;
-  }
+  padding-bottom: 80px;
 
   /*серый клинишек*/
   &::after {
@@ -20,8 +16,17 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background: url("../../img/bg-triangle-white.svg") no-repeat;
+    background: url("../img/bg-triangle-white.svg") no-repeat;
     transform: rotate(180deg);
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 90px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 60px;
+    padding-bottom: 175px;
   }
 }
 
@@ -31,21 +36,37 @@
   font-size: 24px;
   line-height: normal;
   font-weight: lighter;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-top: 0;
+  padding-bottom: 52px;
   padding-left: 40px;
   padding-right: 40px;
 
-  @media (min-width: @tablet-width) {
-    font-size: 40px;
-
-    &:last-child {
-      padding: 0 22%;
-
-      @media (min-width: @desktop-width) {
-        padding: 0 32%;
-      }
+  &--first {
+    @media (min-width: @tablet-width) {
+      font-size: 40px;
+      padding-top: 10px;
+      padding-left: 0;
+      padding-right: 0;
     }
+  }
+
+  &--last {
+    padding-top: 10px;
+
+    @media (min-width: @tablet-width) {
+      font-size: 40px;
+      padding-top: 5px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-left: 250px;
+      padding-right: 250px;
+      padding-bottom: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 50px;
   }
 }
 
@@ -60,18 +81,20 @@
 .advantages__wrapper {
   position: relative;
   background: @main-color;
-  padding: 0 20px;
-  padding-top: 30px;
-  padding-bottom: 320px;
+  margin-top: -51px;
+  padding-top: 0;
+  padding-bottom: 315px;
+  padding-left: 30px;
+  padding-right: 30px;
 
   &::before {
     content: "";
     position: absolute;
-    bottom: -35px;
+    bottom: -45px;
     right: 25%;
     width: 157px;
     height: 320px;
-    background-image: url("../../img/iphone-screen-mobile@1x.png");
+    background-image: url("../img/iphone-screen-mobile@1x.png");
     z-index: 1;
 
     @media (min-width: @tablet-width) {
@@ -84,24 +107,29 @@
       display: flex;
       flex-direction: row;
       text-align: left;
-      padding-left: 48%;
-      padding-bottom: 40px;
+      padding-left: 330px;
+      padding-bottom: 10px;
     }
   }
 
   @media (min-width: @desktop-width) {
     & {
       display: block;
-      text-align: center;
-      padding-top: 360px;
-      padding-left: 13%;
-      padding-right: 13%;
+      align-items: center;
+      justify-content: center;
+      padding-top: 270px;
+      padding-left: 130px;
+      padding-right: 130px;
     }
   }
 }
 
 .advantages__list {
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    padding-bottom: 10px;
+  }
 
   @media (min-width: @desktop-width) {
     & {
@@ -117,15 +145,31 @@
 
   &:first-child {
     margin-bottom: -10px;
+
+    @media (min-width: @tablet-width) {
+      margin-top: -10px;
+      padding-bottom: 5px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
   }
 
   &:last-child {
-    margin-top: -5px;
+    margin-top: -7px;
     margin-right: 0;
+
+    @media (min-width: @tablet-width) {
+      margin-top: 0;
+    }
   }
 
   @media (min-width: @desktop-width) {
-    margin-right: 6.5%;
+    text-align: center;
+    margin-right: 65px;
   }
 }
 
@@ -140,6 +184,35 @@
   @media (min-width: @desktop-width) {
     font-size: 30px;
     line-height: 30px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  &--first {
+    @media (min-width: @desktop-width) {
+      padding-top: 40px;
+      padding-bottom: 25px;
+      padding-left: 20px;
+      padding-right: 0;
+    }
+  }
+
+  &--middle {
+    @media (min-width: @desktop-width) {
+      padding-top: 40px;
+      padding-bottom: 25px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &--last {
+    @media (min-width: @desktop-width) {
+      padding-left: 0;
+      padding-right: 10px;
+    }
   }
 }
 
@@ -149,8 +222,42 @@
   line-height: 24px;
   font-weight: normal;
 
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+  }
+
   @media (min-width: @desktop-width) {
     font-size: 18px;
     line-height: 30px;
+  }
+
+  &--first {
+    @media (min-width: @desktop-width) {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 20;
+      padding-right: 0;
+    }
+  }
+
+  &--middle {
+    @media (min-width: @desktop-width) {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 20;
+      padding-right: 20;
+    }
+  }
+
+  &--last {
+    padding-top: 0;
+    padding-right: 10px;
+
+    @media (min-width: @desktop-width) {
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 }

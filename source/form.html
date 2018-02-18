@@ -8,21 +8,21 @@
   </head>
   <body>
     <header class="page-header container">
-        <div class="main-nav main-nav--opened main-nav--nojs">
-          <!--При открытом меню используется класс с модификатором "main-nav--opened" для того, чтобы была кнопка закрытия, а при закрытом меню модификатор - main-nav--closed, чтобы была кнопка-бургер-->
-          <div class="main-nav__block main-nav__block--open"><!--При открытом меню используется класс с модификатором "main-nav__block--open" для того, чтобы background-color: #283645;-->
-            <a class="main-nav__logo">
-              <img class="main-nav__logo--mob" width="78" height="22" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения pink">
-              <img class="main-nav__logo--tab" width="150" height="43" src="img/logo-pink-white-mobile_header.svg" alt="Логотип приложения pink">
-            </a>
-          </div>
+        <div class="main-nav">
+            <div class="main-nav__logo">
+            <div class="logo">
+              <a class="logo__link" href="index.html">
+                <img class="logo__img" width="78" height="22" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения pink">
+              </a>
+            </div>
           <button class="main-nav__toggle" type="button"></button>
+        </div>
           <nav class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active"><a href="index.html">Главная</a></li>
-              <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-              <li class="main-nav__item"><a>Конкурс</a></li>
-              <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="index.html"><span>Главная</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="photo.html"><span>Фотографии</span></a></li>
+              <li class="main-nav__item main-nav__item--active"><a class="main-nav__link main-nav__link--active"><span>Конкурс</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/"><span>HTML Academy</span></a></li>
             </ul>
           </nav>
         </div>
@@ -42,19 +42,19 @@
                   <legend class="competition__header competition__header--hidden visually-hidden">Фамилия, имя и отчество участвующего в конкурсе.</legend>
                     <div class="competition__wrapper competition__wrapper--info">
                       <div class="competition__caption competition__caption--info"><label for="surname">Фамилия:</label></div>
-                      <div class="competition__connection competition__connection --info">
-                        <input class="competition__input" type="text" id="surname" name="surname" placeholder="Укажите вашу фамилию*" required>
+                      <div class="competition__connection competition__connection--info">
+                        <input class="competition__input" type="text" id="surname" name="surname" placeholder="Укажите фамилию*" required>
                       </div>
                     </div>
                     <div class="competition__wrapper competition__wrapper--info">
                       <div class="competition__caption competition__caption--info"><label for="name">Имя:</label></div>
-                      <div class="competition__connection competition__connection --info">
+                      <div class="competition__connection competition__connection--info">
                         <input class="competition__input" type="text" id="name" name="name" placeholder="Укажите ваше имя*" required>
                       </div>
                     </div>
                     <div class="competition__wrapper competition__wrapper--info">
                       <div class="competition__caption competition__caption--info"><label for="patronymic">Отчество:</label></div>
-                      <div class="competition__connection competition__connection --info">
+                      <div class="competition__connection competition__connection--info">
                         <input class="competition__input" type="text" id="patronymic" name="patronymic" placeholder="Ну и отчество тоже">
                       </div>
                     </div>
@@ -95,20 +95,20 @@
                   </div>
                 </fieldset>
                 <fieldset class="competition__fieldset competition__fieldset--contact">
-                  <legend class="competition__header competition__header--invisible">Контактная информация</legend>
+                  <legend class="competition__header competition__header--contact">Контактная информация</legend>
                   <div class="competition__section competition__section--contact">
                     <div class="competition__wrapper competition__wrapper--contact">
                       <div class="competition__caption competition__caption--contact"><label for="tel">Номер телефона</label></div>
                       <div class="competition__connection competition__connection--contact">
                         <input class="competition__input competition__input--contact" type="tel" id="tel" name="tel" placeholder="Номер, пожалуйста">
-                        <input class="competition__img" type="submit" name="tel">
+                        <div class="competition__img">Отправить телефон</div>
                       </div>
                     </div>
                     <div class="competition__wrapper competition__wrapper--contact">
                       <div class="competition__caption competition__caption--contact"><label for="email">Адрес почты</label></div>
                       <div class="competition__connection competition__connection--contact">
                         <input class="competition__input competition__input--contact" type="email" id="email" name="email" placeholder="Введите почту*" required>
-                        <input class="competition__img" type="submit" name="email">
+                        <div class="competition__img">Отправить email</div>
                       </div>
                     </div>
                   </div>
@@ -118,7 +118,7 @@
                   <div class="competition__list">
                     <div class="competition__wrapper competition__wrapper--app">
                       <input class="competition__radio visually-hidden" type="radio" id="IOS" name="application" value="IOS" checked>
-                      <div class="competition__text"><label for="IOS">Pink для на IOS</label></div>
+                      <div class="competition__text"><label for="IOS">Pink для IOS</label></div>
                     </div>
                     <div class="competition__wrapper competition__wrapper--app">
                       <input class="competition__radio visually-hidden" type="radio" id="Android" name="application" value="Android">

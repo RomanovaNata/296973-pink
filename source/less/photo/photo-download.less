@@ -3,26 +3,38 @@
   text-align: center;
 }
 
-.photo-download__title {
+.photo-download__slogan {
   color: #283645;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
 }
 
 .photo-download__wrapper {
   background: @main-color;
   padding-top: 20px;
-  padding-bottom: 40px;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: -12px;
 
   @media (min-width: @tablet-width) {
     & {
       display: flex;
+      padding-top: 58px;
+      padding-bottom: 35px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
@@ -38,8 +50,7 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding-top: 20px;
-  width: 100%;
+  padding-top: 35px;
 
   @media (min-width: @tablet-width) {
     padding-left: 5%;
@@ -50,11 +61,11 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  width: 100%;
-  padding-bottom: 20px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-bottom: 15px;
+  padding-left: 33px;
+  padding-right: 33px;
 
   @media (min-width: @tablet-width) {
     width: 30%;
@@ -82,8 +93,6 @@
 }
 
 .photo-download__input {
-  width: 100%;
-
   &--crop {
     display: none;
   }
@@ -103,8 +112,11 @@
 
 .photo-download__scales {
   width: 100%;
-  padding-top: 20px;
   min-height: 10px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  padding-left: 18px;
+  padding-right: 22px;
 
   @media (min-width: @tablet-width) {
     width: 70%;
@@ -145,21 +157,21 @@
   position: absolute;
   width: 6px;
   height: 6px;
-  border: 10px solid #d22856;
+  border: 7px solid #d22856;
   border-radius: 50%;
 
   &--crop {
-    top: -10px;
-    right: 10%;
+    top: -6px;
+    right: 33px;
 
     &::after {
       content: "";
       position: absolute;
-      top: -7px;
-      right: -7px;
+      top: -4px;
+      right: -4px;
       width: 0;
       height: 0;
-      border: 7px solid #f2f2f2;
+      border: 3.5px solid #f2f2f2;
       border-radius: 50%;
     }
   }
@@ -199,7 +211,7 @@
 
 .photo-download__btns {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 75px;
   margin-bottom: 10px;
 
   @media (min-width: @tablet-width) {
@@ -220,14 +232,17 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: normal;
-  width: 100%;
+  width: 300px;
 
   &--reset {
     color: #283645;
     border: 2px solid #dddfe0;
     border-radius: 30px;
-    width: 100%;
+    width: 280px;
     min-height: 50px;
+    padding-top: 5px;
+    padding-left: auto;
+    padding-right: auto;
   }
 
   &--reset span {
@@ -237,10 +252,10 @@
   &--submit {
     border: 2px solid #d22856;
     border-radius: 30px;
-    width: 100%;
+    width: 280px;
     min-height: 50px;
     background-color: #f2f2f2;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: @tablet-width) {
@@ -252,3 +267,13 @@
     margin-bottom: 0;
   }
 }
+
+/*для стилизации планшетной версии
+
+.photo-download__img {
+  @media (min-width: @tablet-width) {
+    outline: 1px solid red;
+    width: 300px;
+    height: 400px;
+  }
+}*/

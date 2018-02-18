@@ -1,9 +1,10 @@
 .page-footer__wrapper {
+  align-items: center;
   min-height: 300px;
-  padding-top: 60px;
-  padding-right: 6%;
+  padding-top: 55px;
   padding-bottom: 38px;
-  padding-left: 6%;
+  padding-right: 20px;
+  padding-left: 20px;
 
   &--invisible {
     display: none;
@@ -14,9 +15,16 @@
     justify-content: space-between;
     min-height: 177px;
     padding-top: 40px;
-    padding-right: 0;
     padding-bottom: 0;
-    padding-left: 0;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-right: 130px;
+    padding-left: 130px;
   }
 }
 
@@ -26,7 +34,7 @@
   vertical-align: middle;
 
   @media (min-width: @tablet-width) {
-    width: 30%;
+    width: 150px;
   }
 
   &:hover {

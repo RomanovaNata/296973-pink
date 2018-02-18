@@ -1,5 +1,6 @@
 .tariff {
   background: #ffffff;
+  overflow: hidden;
 }
 
 .tariff__list {
@@ -15,11 +16,18 @@
   @media (min-width: @tablet-width) {
     & {
       width: 100%;
+      margin-top: -25px;
+      padding-bottom: 72px;
+      padding-left: 20px;
+      padding-right: 20px;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding: 0 10%;
+    padding-top: 80px;
+    padding-bottom: 93px;
+    padding-left: 120px;
+    padding-right: 120px;
   }
 }
 
@@ -29,7 +37,6 @@
   line-height: 30px;
   font-weight: normal;
   width: 280px;
-  height: 100%;
   margin: 0 0 0 2px;
 
   &--invisible {
@@ -48,17 +55,18 @@
 }
 
 .tariff__header {
-  height: 80px;
+  height: 100px;
   position: relative;
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 30px;
+  font-weight: bold;
   text-align: center;
   background: #283645;
   padding-bottom: 10px;
-  padding-top: 10px;
-  padding-right: 40px;
-  padding-left: 40px;
+  padding-top: 15px;
+  padding-right: auto;
+  padding-left: auto;
 
   &--invisible {
     display: none;
@@ -71,10 +79,17 @@
     left: -2px;
     width: 70px;
     height: 73px;
-    background: url("../../img/bg-hit.svg") no-repeat;
+    background: url("../img/bg-hit.svg") no-repeat;
 
     @media (min-width: @tablet-width) {
-      background: url("../../img/bg-hit-tablet.svg") no-repeat;
+      background: url("../img/bg-hit-tablet.svg") no-repeat;
+      top: 25px;
+      left: -2px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 0;
+      left: 0;
     }
   }
 
@@ -87,10 +102,36 @@
     height: 73px;
     transform: rotate(-45deg);
     z-index: 1;
+
+    @media (min-width: @tablet-width) {
+      top: 25px;
+      left: 7px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 14px;
+    line-height: 24px;
+    height: 100px;
+    padding-top: 35px;
+    padding-bottom: 0;
+    padding-right: auto;
+    padding-left: auto;
   }
 
   @media (min-width: @desktop-width) {
     height: 100px;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: auto;
+    padding-left: auto;
   }
 }
 
@@ -102,21 +143,22 @@
 
 .tariff__price {
   font-weight: lighter;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 .tariff__option {
-  list-style: none;
-
   &--invisible {
     padding-top: 80px;
 
-    @media (min-width: @desktop-width) {
+    @media (min-width: @tablet-width) {
       padding-top: 100px;
     }
   }
 }
 
 .tariff__change {
+  position: relative;
   display: flex;
   height: 60px;
   justify-content: space-between;
@@ -128,18 +170,41 @@
 
 
   &--no {
+    position: absolute;
+    top: 10px;
+    right: 15%;
     font-size: 0;
     fill: #f25b26;
+
+    @media (min-width: @tablet-width) {
+      top: 10px;
+      right: 45%;
+    }
   }
 
   &--yes {
+    position: absolute;
+    top: 10px;
+    right: 15%;
     font-size: 0;
     fill: #3dc644;
+
+    @media (min-width: @tablet-width) {
+      top: 10px;
+      right: 45%;
+    }
   }
 
   @media (min-width: @tablet-width) {
     height: 45px;
     padding: 10px 5%;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 10px;
   }
 }
 
@@ -159,12 +224,18 @@
 
 .tariff__caption {
   display: none;
+  text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
     display: block;
-    text-transform: uppercase;
+    text-transform: none;
     color: #283645;
     font-size: 14px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
     line-height: 30px;
   }
 }
@@ -173,6 +244,8 @@
   text-align: center;
   font-size: 0;
   background-color: @main-color;
+  padding-top: 30px;
+  padding-bottom: 40px;
 
   @media (min-width: @tablet-width) {
     display: none;
@@ -187,20 +260,20 @@
   height: 5px;
   border-radius: 50%;
   border: 5px solid #b5b9be;
-  margin: 10px;
+  margin: 7px;
   cursor: pointer;
 
   &--active {
-    border: 10px solid #283645;
+    border: 7px solid #283645;
     cursor: default;
   }
 
   &--active::before {
     content: "";
     position: absolute;
-    top: -5px;
-    right: -5px;
+    top: -3.5px;
+    right: -3.5px;
     border-radius: 50%;
-    border: 5px solid #ffffff;
+    border: 3.5px solid #ffffff;
   }
 }

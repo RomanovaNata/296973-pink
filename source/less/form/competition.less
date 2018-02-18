@@ -8,28 +8,34 @@
   width: 100%;
 
   &--slogan {
-    padding-top: 50px;
-    padding-bottom: 48px;
-    padding-left: 10%;
-    padding-right: 10%;
+    font-size: 14px;
+    line-height: 30px;
+    padding-top: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @media (min-width: @tablet-width) {
-      padding-left: 20%;
-      padding-right: 20%;
+      font-size: 18px;
+      padding-top: 95px;
+      padding-bottom: 33px;
+      padding-left: 90px;
+      padding-right: 90px;
     }
 
     @media (min-width: @desktop-width) {
-      padding-left: 25%;
-      padding-right: 25%;
+      padding-bottom: 40px;
+      padding-left: 230px;
+      padding-right: 230px;
     }
   }
 
   &--info {
     flex-direction: column;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 
     @media (min-width: @tablet-width) {
       flex-direction: row;
+      padding-bottom: 50px;
     }
   }
 
@@ -39,23 +45,45 @@
 
     @media (min-width: @tablet-width) {
       flex-direction: column-reverse;
+      width: 620px;
     }
-  }
 
-  &--contact:last-child {
     @media (min-width: @desktop-width) {
-      padding-left: 5%;
+      width: 410px;
+      padding-bottom: 8px;
+      padding-left: 35px;
+      padding-right: 0;
     }
   }
 
   &--achievements {
-    padding-bottom: 40px;
-    padding-left: 20%;
+    padding-bottom: 50px;
+    padding-left: 90px;
+
+    @media (min-width: @tablet-width) {
+      padding-left: 115px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 55px;
+    }
   }
 
   &--app {
-    padding-bottom: 40px;
-    padding-left: 30%;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 90px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 0;
+      padding-bottom: 40px;
+      padding-left: 120px;
+    }
+
+    @media (min-width: @desktop-width) {
+      padding-bottom: 45px;
+      padding-left: 135px;
+    }
   }
 }
 
@@ -64,9 +92,9 @@
     &--contact {
       display: flex;
       flex-direction: row;
-      width: 100%;
-      padding-left: 5%;
-      padding-right: 5%;
+      justify-content: space-between;
+      padding-left: 20px;
+      padding-right: 60px;
     }
   }
 }
@@ -79,10 +107,15 @@
   font-weight: normal;
   text-align: center;
 
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
+
   &--visible {
     display: none;
 
     @media (min-width: @tablet-width) {
+      font-size: 18px;
       display: inline;
     }
   }
@@ -94,18 +127,24 @@
   line-height: 30px;
   text-transform: uppercase;
   font-weight: normal;
-  width: 100%;
-  padding-left: 6%;
+  padding-bottom: 5px;
+  padding-left: 20px;
 
   &--info {
     @media (min-width: @tablet-width) {
-      width: 20%;
+      padding-top: 20px;
+      padding-right: 20px;
+      padding-left: 0;
     }
   }
 
   &--contact {
+    padding-bottom: 0;
+
     @media (min-width: @tablet-width) {
-      width: 100%;
+      padding-top: 10px;
+      padding-bottom: 5px;
+      padding-left: 20px;
     }
   }
 }
@@ -113,11 +152,19 @@
 .competition__connection {
   &--contact {
     display: flex;
+
+    @media (min-width: @tablet-width) {
+      width: 500px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 380px;
+    }
   }
 
   &--info {
     @media (min-width: @tablet-width) {
-      width: 80%;
+      flex-grow: 1;
     }
   }
 }
@@ -140,12 +187,20 @@
   line-height: 30px;
   font-weight: normal;
   border: 2px solid #e5e5e5;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
 
   &--contact {
     width: 100%;
+
+    @media (min-width: @tablet-width) {
+      width: 400px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 315px;
+    }
   }
 }
 
@@ -154,7 +209,7 @@
 
   @media (min-width: @tablet-width) {
     display: block;
-    width: 20%;
+    width: 65px;
   }
 }
 
@@ -167,8 +222,24 @@
   text-align: center;
   width: 100%;
 
-  &--invisible {
+  &--contact {
     display: none;
+
+    @media (min-width: @tablet-width) {
+      display: inline-block;
+      width: 260px;
+      background-color: #ffffff;
+      top: 0;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 180px;
+      margin-right: 180px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 340px;
+      margin-right: 340px;
+    }
   }
 
   &--achievements {
@@ -176,6 +247,21 @@
     top: 40px;
     padding-left: 15%;
     padding-right: 15%;
+
+    @media (min-width: @tablet-width) {
+      width: 430px;
+      background-color: #ffffff;
+      top: -10px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 90px;
+      margin-right: 90px;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-left: 250px;
+      margin-right: 250px;
+    }
   }
 
   &--app {
@@ -183,13 +269,48 @@
     top: 40px;
     padding-left: 15%;
     padding-right: 15%;
+
+    @media (min-width: @tablet-width) {
+      width: 365px;
+      background-color: #ffffff;
+      top: -10px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 130px;
+      margin-right: 130px;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: -10px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 35px;
+      margin-right: 35px;
+    }
   }
 
   &--description {
     position: absolute;
-    top: 30px;
-    padding-left: 15%;
-    padding-right: 15%;
+    top: 40px;
+    left: 0;
+    padding-right: auto;
+    padding-left: auto;
+
+    @media (min-width: @tablet-width) {
+      width: 300px;
+      background-color: #ffffff;
+      top: -10px;
+      padding-left: 0;
+      padding-right: 0;
+      margin-left: 135px;
+      margin-right: 135px;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 265px;
+      margin-left: 330px;
+      margin-right: 330px;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -201,7 +322,6 @@
 
 .competition__fieldset {
   display: flex;
-  width: 100%;
   flex-direction: column;
   border: hidden;
 
@@ -211,80 +331,143 @@
     min-height: 604px;
     padding-top: 40px;
 
+    @media (min-width: @tablet-width) {
+      min-height: 555px;
+      background: #ffffff;
+      display: inline;
+      border: 2px solid #e5e5e5;
+      padding: 0;
+      padding-bottom: 0;
+      margin-top: 43px;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 0;
+    }
+
     @media (min-width: @desktop-width) {
       background: #ffffff;
       min-height: 115px;
-      padding-right: 10%;
-      padding-left: 10%;
+      padding-top: 0;
+      padding-bottom: 0;
+      padding-right: 0;
+      padding-left: 0;
+      margin-top: 55px;
+      margin-left: 130px;
+      margin-right: 130px;
+      margin-bottom: 0;
     }
   }
 
   &--description {
     position: relative;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    padding-right: 6%;
-    padding-left: 6%;
+    padding-top: 75px;
+    padding-bottom: 47px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+    @media (min-width: @tablet-width) {
+      border: 2px solid #e5e5e5;
+      padding-top: 45px;
+      padding-bottom: 40px;
+      padding-left: 60px;
+      padding-right: 60px;
+      margin-top: 65px;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
 
     @media (min-width: @desktop-width) {
-      padding-right: 10%;
-      padding-left: 10%;
+      padding-top: 45px;
+      padding-bottom: 45px;
+      padding-left: 60px;
+      padding-right: 60px;
+      margin-top: 65px;
+      margin-right: 130px;
+      margin-left: 130px;
+      margin-bottom: 15px;
     }
   }
 
   &--info {
-    padding-right: 6%;
-    padding-left: 6%;
+    padding-top: 35px;
+    padding-bottom: 27px;
+    padding-right: 20px;
+    padding-left: 20px;
 
     @media (min-width: @tablet-width) {
       order: -3;
+      padding-bottom: 0;
     }
 
     @media (min-width: @desktop-width) {
-      width: 50%;
+      width: 600px;
       padding-top: 40px;
-      padding-left: 10%;
-      padding-right: 0%;
+      padding-left: 130px;
+      padding-right: 35px;
     }
   }
 
   &--app {
     position: relative;
     background: @main-color;
+    padding-bottom: 30px;
 
     @media (min-width: @tablet-width) {
       background: #ffffff;
       order: -2;
       display: inline;
-      border: visibility;
-      padding-right: 10%;
-      /*width: 88%;
       border: 2px solid #e5e5e5;
-      margin-right: 6%;
-      margin-left: 6%;*/
+      padding: 0;
+      padding-bottom: 25px;
+      margin-top: 18px;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
     }
 
     @media (min-width: @desktop-width) {
-      width: 50%;
+      width: 430px;
+      padding-top: 5px;
+      padding-bottom: 10px;
+      margin-top: 35px;
+      margin-bottom: 45px;
+      margin-right: 35px;
+      margin-left: 35px;
     }
   }
 
   &--contact {
-    padding-top: 40px;
-    padding-bottom: 20px;
-    padding-left: 6%;
-    padding-right: 6%;
+    background-color: #ffffff;
+    padding-top: 32px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @media (min-width: @tablet-width) {
       order: -1;
+      border: 2px solid #e5e5e5;
+      padding-top: 45px;
+      padding-bottom: 0;
+      padding-left: 60px;
+      padding-right: 60px;
+      margin-top: 35px;
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
     }
 
     @media (min-width: @desktop-width) {
       display: flex;
       flex-direction: row;
-      width: 100%;
-      padding-left: 10%;
-      padding-right: 10%;
+      padding-top: 35px;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 10px;
+      margin-right: 130px;
+      margin-left: 130px;
+      margin-bottom: 10px;
     }
   }
 
@@ -300,7 +483,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 100px;
+  padding-top: 85px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 55px;
+  }
 
   @media (min-width: @desktop-width) {
     & {
@@ -319,7 +506,6 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: normal;
-  width: 75%;
 }
 
 .competition__textarea {
@@ -330,9 +516,21 @@
   font-family: "PT Open Sans", "Arial", sans-serif;
   width: 100%;
   min-height: 200px;
-  padding: 20px;
+  padding-top: 13px;
+  padding-left: 20px;
   resize: none;
   border: 2px solid #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-height: 125px;
+  }
 }
 
 .competition__submit {
@@ -340,14 +538,15 @@
   border: none;
   border-radius: 2px;
   width: 100%;
-  min-height: 50px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   @media (min-width: @tablet-width) {
-    width: 45%;
+    width: 320px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 30%;
+    width: 300px;
   }
 }
 
@@ -383,10 +582,12 @@
   font-weight: lighter;
   text-transform: uppercase;
   width: 100%;
+  padding-top: 35px;
 
   @media (min-width: @tablet-width) {
     text-align: right;
-    width: 50%;
+    width: 340px;
+    padding-top: 20px;
   }
 
   &--color {
@@ -419,20 +620,34 @@
 }
 
 .competition__service {
-  padding-left: 6%;
-  padding-right: 6%;
-  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0;
 
   @media (min-width: @tablet-width) {
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }
 
 .competition__part {
   @media (min-width: @desktop-width) {
     & {
-      width: 33.333%;
+      display: flex;
+      flex-direction: column;
+      width: 310px;
+    }
+  }
+
+  &:first-child {
+    @media (min-width: @desktop-width) {
+      width: 315px;
     }
   }
 }

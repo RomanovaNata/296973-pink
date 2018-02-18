@@ -8,28 +8,28 @@
   </head>
   <body>
     <header class="page-header container">
-        <div class="main-nav main-nav--opened main-nav--nojs">
-          <!--При открытом меню используется класс с модификатором "main-nav--opened" для того, чтобы была кнопка закрытия, а при закрытом меню модификатор - main-nav--closed, чтобы была кнопка-бургер-->
-          <div class="main-nav__block main-nav__block--open"><!--При открытом меню используется класс с модификатором "main-nav__block--open" для того, чтобы background-color: #283645;-->
-            <a class="main-nav__logo">
-              <img class="main-nav__logo--mob" width="78" height="22" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения pink">
-              <img class="main-nav__logo--tab" width="150" height="43" src="img/logo-pink-white-mobile_header.svg" alt="Логотип приложения pink">
-            </a>
-          </div>
+        <div class="main-nav">
+            <div class="main-nav__logo">
+            <div class="logo">
+              <a class="logo__link">
+                <img class="logo__img" width="78" height="22" src="img/logo-pink-white-mobile.svg" alt="Логотип приложения pink">
+              </a>
+            </div>
           <button class="main-nav__toggle" type="button"></button>
+        </div>
           <nav class="main-nav__wrapper">
             <ul class="main-nav__list">
-              <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-              <li class="main-nav__item"><a href="photo.html">Фотографии</a></li>
-              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-              <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+              <li class="main-nav__item main-nav__item--active"><a class="main-nav__link main-nav__link--active"><span>Главная</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="photo.html"><span>Фотографии</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="form.html"><span>Конкурс</span></a></li>
+              <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/"><span>HTML Academy</span></a></li>
             </ul>
           </nav>
         </div>
     </header>
     <main class="page-main container">
       <h1 class="page-main__header visually-hidden">Сайт приложения приложения pink</h1>
-      <section class="application container">
+      <section class="application">
           <div class="application__download">
             <p class="application__slogan">Взгляните на жизнь иначе!</p>
             <h2 class="application__header visually-hidden">Виды приложения Pink</h2>
@@ -39,34 +39,34 @@
               <li class="application__item application__item--android"><a href="https://play.google.com/store">Android</a></li>
               <li class="application__item application__item--microsoft"><a href="https://www.microsoft.com/ru-ru/store/b/home">Windows</a></li>
             </ul>
-            <p class="application__description">Доступно для IPhone, IPad, Android, Windows Phone, OS X, Windows 8</p>
+            <p class="application__description">Доступно для IPhone, IPad,Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
         <section class="advantages">
             <h2 class="advantages__header visually-hidden">Преимущества приложения Pink</h2>
             <div class="advantages__slogan">
-              <p class="advantages__text">Устали от серости мегаполиса?</p>
-              <p class="advantages__text">Нам есть, что вам предложить!</p>
+              <p class="advantages__text advantages__text--first">Устали от серости мегаполиса?</p>
+              <p class="advantages__text advantages__text--last">Нам есть, что вам предложить!</p>
             </div>
             <div class="advantages__wrapper">
               <ul class="advantages__list">
                 <li class="advantages__item">
-                  <div class="advantages__caption">Поднимает настроение</div>
-                  <div class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</div>
+                  <div class="advantages__caption advantages__caption--first">Поднимает настроение</div>
+                  <div class="advantages__description advantages__description--first">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</div>
                 </li>
                 <li class="advantages__item">
-                  <div class="advantages__caption">Меняет мир вокруг</div>
-                  <div class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой надписью, чтобы усилить эффект</div>
+                  <div class="advantages__caption advantages__caption--middle">Меняет мир вокруг</div>
+                  <div class="advantages__description advantages__description--middle">Сделайте снимок и украсьте его смайликом или текстовой надписью, чтобы усилить эффект</div>
                 </li>
                 <li class="advantages__item">
-                  <div class="advantages__caption">Заводит новых друзей</div>
-                  <div class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</div>
+                  <div class="advantages__caption advantages__caption--last">Заводит новых друзей</div>
+                  <div class="advantages__description advantages__description--last">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</div>
                 </li>
               </ul>
             </div>
         </section>
         <section class="additional-block">
-            <h2 class="additional-block__caption">Эффект на 24 часа!</h2>
+            <h2 class="additional-block__caption"><span>Эффект</span> на 24 часа!</h2>
             <p class="additional-block__description">Британские ученые провели исследование и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a class="additional-block__link" href="#">Узнать больше об исследовании</a>
         </section>
@@ -199,19 +199,19 @@
               <div class="contacts__list">
                 <div class="contacts__item contacts__item--tel">
                   <span class="contacts__caption">Звоните:</span>
-                  <div class="contacts__wrapper">
-                    <a class="contacts__contact" href="#">+7(812)555-66-66</a>
+                  <div class="contacts__wrapper contacts__wrapper--tel">
+                    <a class="contacts__contact contacts__contact--tel" href="#">+7(812)555-66-66</a>
                   </div>
                 </div>
                 <div class="contacts__item contacts__item--email">
                   <span class="contacts__caption">Пишите:</span>
-                  <div class="contacts__wrapper">
+                  <div class="contacts__wrapper contacts__wrapper--email">
                     <a class="contacts__contact contacts__contact--email" href="#">mail@htmlacademy.ru</a>
                   </div>
                 </div>
                 <div class="contacts__item contacts__item--dom">
                   <span class="contacts__caption">Приезжайте в гости:</span>
-                  <div class="contacts__wrapper">
+                  <div class="contacts__wrapper contacts__wrapper--dom">
                     <span class="contacts__contact contacts__contact--dom">ул.Большая Конюшенная, 19/8</span>
                   </div>
                 </div>
@@ -224,7 +224,7 @@
         </section>
     </main>
     <footer class="page-footer container">
-        <div class="page-footer__wrapper">
+        <div class="page-footer__wrapper page-footer__wrapper--invisible">
             <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3" height="40.375" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve" class="page-footer__logo">
             <g>
               <path fill="#283645" d="M71.874,18.661c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.146v0.063 c0,4.86-4.057,7.373-8.854,7.373h-5.475v6.825c0,0.708-0.58,1.287-1.289,1.287c-0.676,0-1.256-0.58-1.256-1.287L71.874,18.661 L71.874,18.661z M79.988,29.641c3.734,0,6.182-1.996,6.182-4.959v-0.062c0-3.221-2.414-4.894-6.053-4.894h-5.699v9.917h5.57V29.641 z"/>
